@@ -22,6 +22,7 @@ module.exports = {
         'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
         'gradient': 'gradient 8s linear infinite',
         'bounce-slow': 'bounce 3s infinite',
+        'gradient-slow': 'gradient 15s ease infinite',
       },
       keyframes: {
         fadeIn: {
@@ -37,9 +38,14 @@ module.exports = {
           '50%': { transform: 'translateY(-20px)' },
         },
         gradient: {
-          '0%': { backgroundPosition: '0% 50%' },
-          '50%': { backgroundPosition: '100% 50%' },
-          '100%': { backgroundPosition: '0% 50%' },
+          '0%, 100%': {
+            'background-size': '200% 200%',
+            'background-position': 'left center',
+          },
+          '50%': {
+            'background-size': '200% 200%',
+            'background-position': 'right center',
+          },
         },
       },
       backgroundSize: {

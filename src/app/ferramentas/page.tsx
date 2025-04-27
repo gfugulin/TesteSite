@@ -1,91 +1,200 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { fadeInUp, staggerContainer } from '@/utils/animations'
 import Link from 'next/link'
-
-const tools = [
-  {
-    id: 'roi-calculator',
-    title: 'Calculadora de ROI',
-    description: 'Calcule o retorno sobre investimento das suas campanhas de marketing digital',
-    icon: '📊',
-    color: 'from-blue-500/20 to-cyan-500/20',
-    link: '/ferramentas/calculadora-roi'
-  },
-  {
-    id: 'digital-maturity',
-    title: 'Teste de Maturidade Digital',
-    description: 'Descubra o nível de maturidade digital da sua empresa e receba recomendações personalizadas',
-    icon: '📈',
-    color: 'from-purple-500/20 to-pink-500/20',
-    link: '/ferramentas/maturidade-digital'
-  },
-  {
-    id: 'ai-challenge',
-    title: 'Desafio 7 Dias de IA',
-    description: 'Um programa intensivo para dominar as principais ferramentas de IA do mercado',
-    icon: '🤖',
-    color: 'from-green-500/20 to-teal-500/20',
-    link: '/ferramentas/desafio-ia'
-  },
-  {
-    id: 'notion-templates',
-    title: 'Templates Notion de IA',
-    description: 'Collection dos melhores templates de IA para otimizar seu workflow',
-    icon: '📑',
-    color: 'from-orange-500/20 to-yellow-500/20',
-    link: '/ferramentas/templates-notion'
-  }
-]
+import Image from 'next/image'
+import { ChartBarIcon, PresentationChartLineIcon, MagnifyingGlassIcon, EnvelopeIcon, ClockIcon, SparklesIcon, LightBulbIcon, CheckCircleIcon } from '@heroicons/react/24/outline'
 
 export default function FerramentasPage() {
   return (
-    <main className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 py-20">
-      <div className="container mx-auto px-4">
-        <motion.div
-          variants={staggerContainer}
-          initial="hidden"
-          animate="visible"
-          className="max-w-6xl mx-auto"
-        >
-          <motion.div variants={fadeInUp} className="text-center mb-16">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              Ferramentas <span className="text-gradient">Gratuitas</span>
-            </h1>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Recursos exclusivos para impulsionar seu crescimento e produtividade
-            </p>
-          </motion.div>
+    <main className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
+      {/* Hero Section */}
+      <section className="py-20 px-8">
+        <div className="max-w-4xl mx-auto text-center">
+          <motion.h1 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="text-4xl md:text-5xl font-bold mb-6"
+          >
+            Ferramentas EG
+          </motion.h1>
+          <motion.p 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2 }}
+            className="text-xl text-gray-600 mb-12"
+          >
+            Caixa de ferramentas pronta para uso. Resultados em menos de 10 minutos.
+          </motion.p>
+        </div>
+      </section>
 
-          <div className="grid md:grid-cols-2 gap-8">
-            {tools.map((tool, index) => (
-              <motion.div
-                key={tool.id}
-                variants={fadeInUp}
-                custom={index}
-                className="group"
+      {/* Grid de Ferramentas */}
+      <section className="py-12 px-8">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {/* Calculadora de ROI */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              whileHover={{ y: -5 }}
+              className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all"
+            >
+              <div className="flex items-start mb-6">
+                <div className="bg-purple-100 p-3 rounded-lg">
+                  <ChartBarIcon className="h-7 w-7 text-purple-500" />
+                </div>
+                <div className="ml-4">
+                  <h3 className="text-xl font-bold mb-2">Calculadora de ROI</h3>
+                  <p className="text-gray-600">
+                    Calcule o retorno sobre investimento das suas campanhas de marketing digital.
+                  </p>
+                </div>
+              </div>
+              <div className="space-y-4">
+                <div className="flex items-center text-sm text-gray-500">
+                  <ClockIcon className="h-5 w-5 text-gray-400 mr-2" />
+                  <span>Tempo: 3 minutos</span>
+                </div>
+                <div className="flex items-center text-sm text-gray-500">
+                  <SparklesIcon className="h-5 w-5 text-purple-400 mr-2" />
+                  <span>Resultados instantâneos</span>
+                </div>
+              </div>
+              <Link 
+                href="/ferramentas/calculadora-roi"
+                className="mt-6 inline-block w-full text-center bg-purple-500 text-white py-3 px-6 rounded-xl hover:bg-purple-600 transition-colors"
               >
-                <Link href={tool.link}>
-                  <div className="glass-card p-8 h-full transition-all duration-300 hover:scale-[1.02] cursor-pointer">
-                    <div className={`w-16 h-16 rounded-2xl bg-gradient-to-br ${tool.color} flex items-center justify-center text-3xl mb-6 group-hover:scale-110 transition-transform duration-300`}>
-                      {tool.icon}
-                    </div>
-                    <h2 className="text-2xl font-bold mb-4">{tool.title}</h2>
-                    <p className="text-gray-600">{tool.description}</p>
-                    <div className="mt-6 flex items-center text-eg-green font-medium">
-                      <span>Acessar Ferramenta</span>
-                      <svg className="w-5 h-5 ml-2 group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                      </svg>
-                    </div>
-                  </div>
-                </Link>
-              </motion.div>
-            ))}
+                Calcular ROI
+              </Link>
+            </motion.div>
+
+            {/* Diagnóstico de Maturidade Digital */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              whileHover={{ y: -5 }}
+              className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all"
+            >
+              <div className="flex items-start mb-6">
+                <div className="bg-orange-100 p-3 rounded-lg">
+                  <PresentationChartLineIcon className="h-7 w-7 text-orange-500" />
+                </div>
+                <div className="ml-4">
+                  <h3 className="text-xl font-bold mb-2">Maturidade Digital</h3>
+                  <p className="text-gray-600">
+                    Avalie o nível de maturidade digital do seu negócio em minutos.
+                  </p>
+                </div>
+              </div>
+              <div className="space-y-4">
+                <div className="flex items-center text-sm text-gray-500">
+                  <ClockIcon className="h-5 w-5 text-gray-400 mr-2" />
+                  <span>Tempo: 5 minutos</span>
+                </div>
+                <div className="flex items-center text-sm text-gray-500">
+                  <LightBulbIcon className="h-5 w-5 text-orange-400 mr-2" />
+                  <span>Diagnóstico personalizado</span>
+                </div>
+              </div>
+              <Link 
+                href="/ferramentas/maturidade-digital"
+                className="mt-6 inline-block w-full text-center bg-orange-500 text-white py-3 px-6 rounded-xl hover:bg-orange-600 transition-colors"
+              >
+                Avaliar Maturidade
+              </Link>
+            </motion.div>
+
+            {/* Scanner de Funil EG */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              whileHover={{ y: -5 }}
+              className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all"
+            >
+              <div className="flex items-start mb-6">
+                <div className="bg-green-100 p-3 rounded-lg">
+                  <MagnifyingGlassIcon className="h-7 w-7 text-green-500" />
+                </div>
+                <div className="ml-4">
+                  <h3 className="text-xl font-bold mb-2">Scanner de Funil EG</h3>
+                  <p className="text-gray-600">
+                    Identifique em minutos os principais gargalos do seu processo de vendas.
+                  </p>
+                </div>
+              </div>
+              <div className="space-y-4">
+                <div className="flex items-center text-sm text-gray-500">
+                  <ClockIcon className="h-5 w-5 text-gray-400 mr-2" />
+                  <span>Tempo: 5 minutos</span>
+                </div>
+                <div className="flex items-center text-sm text-gray-500">
+                  <ChartBarIcon className="h-5 w-5 text-green-400 mr-2" />
+                  <span>Diagnóstico instantâneo</span>
+                </div>
+              </div>
+              <Link 
+                href="/ferramentas/scanner-funil"
+                className="mt-6 inline-block w-full text-center bg-green-500 text-white py-3 px-6 rounded-xl hover:bg-green-600 transition-colors"
+              >
+                Fazer Diagnóstico
+              </Link>
+            </motion.div>
+
+            {/* Cold Email Builder EG */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              whileHover={{ y: -5 }}
+              className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all"
+            >
+              <div className="flex items-start mb-6">
+                <div className="bg-blue-100 p-3 rounded-lg">
+                  <EnvelopeIcon className="h-7 w-7 text-blue-500" />
+                </div>
+                <div className="ml-4">
+                  <h3 className="text-xl font-bold mb-2">Cold Email Builder EG</h3>
+                  <p className="text-gray-600">
+                    Gere scripts matadores de cold email para fechar mais negócios B2B.
+                  </p>
+                </div>
+              </div>
+              <div className="space-y-4">
+                <div className="flex items-center text-sm text-gray-500">
+                  <ClockIcon className="h-5 w-5 text-gray-400 mr-2" />
+                  <span>Tempo: 2 minutos</span>
+                </div>
+                <div className="flex items-center text-sm text-gray-500">
+                  <CheckCircleIcon className="h-5 w-5 text-blue-400 mr-2" />
+                  <span>Scripts validados pela EG</span>
+                </div>
+              </div>
+              <Link 
+                href="/ferramentas/cold-email-builder"
+                className="mt-6 inline-block w-full text-center bg-blue-500 text-white py-3 px-6 rounded-xl hover:bg-blue-600 transition-colors"
+              >
+                Gerar Meu Email
+              </Link>
+            </motion.div>
           </div>
-        </motion.div>
-      </div>
+        </div>
+      </section>
+
+      {/* CTA Final */}
+      <section className="py-16 px-8 bg-gray-900 text-white mt-12">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-3xl font-bold mb-6">Quer mais ferramentas exclusivas?</h2>
+          <p className="text-lg mb-8">
+            Agende um diagnóstico gratuito e tenha acesso ao arsenal completo da Evergreen.
+          </p>
+          <Link 
+            href="/contato"
+            className="inline-block bg-green-500 text-white px-8 py-3 rounded-full hover:bg-green-600 transition-colors"
+          >
+            Agendar Diagnóstico Gratuito
+          </Link>
+        </div>
+      </section>
     </main>
   )
 } 

@@ -2,14 +2,15 @@
 
 import { motion } from 'framer-motion'
 import { fadeInUp, staggerContainer, scaleIn } from '@/utils/animations'
+import { ChartBarIcon, CheckCircleIcon } from '@heroicons/react/24/outline'
 
 interface Metrics {
-  conversions?: string
+  agendamentos?: string
+  tempo_resposta?: string
+  taxa_qualificacao?: string
+  leads?: string
   cac?: string
-  mrr?: string
-  revenue?: string
-  processes?: string
-  markets?: string
+  vagas?: string
 }
 
 interface CaseStudy {
@@ -26,51 +27,51 @@ interface CaseStudy {
 
 const cases: CaseStudy[] = [
   {
-    client: 'TechCorp',
-    industry: 'SaaS',
-    challenge: 'Baixa taxa de conversão e CAC alto',
-    solution: 'Implementação da Máquina de Vendas Evergreen',
+    client: 'Grupo Casa Fatilli + Casa & Conforto',
+    industry: 'Móveis Planejados (B2C, multimarcas)',
+    challenge: 'Time comercial sobrecarregado, resposta lenta e baixa conversão no WhatsApp.',
+    solution: 'Desenvolvimento de sistema de SDR automatizado com IA generativa + integração ao CRM. Criação de fluxo de nutrição com pré-qualificação automática de leads por canal.',
     results: [
-      'Aumento de 300% nas conversões',
-      'Redução de 40% no CAC',
-      'ROI positivo em 3 meses',
+      'Redução de 70% no tempo de resposta',
+      'Aumento de 5x na taxa de agendamento',
+      'Padronização do atendimento comercial com IA'
     ],
     metrics: {
       before: {
-        conversions: '2%',
-        cac: 'R$ 1.500',
-        mrr: 'R$ 50k',
+        agendamentos: '10/semana',
+        tempo_resposta: '18h',
+        taxa_qualificacao: '25%'
       },
       after: {
-        conversions: '8%',
-        cac: 'R$ 900',
-        mrr: 'R$ 200k',
-      },
-    },
+        agendamentos: '55/semana',
+        tempo_resposta: '2h',
+        taxa_qualificacao: '60%'
+      }
+    }
   },
   {
-    client: 'GrowthCo',
-    industry: 'E-commerce',
-    challenge: 'Escalabilidade limitada e processos manuais',
-    solution: 'Integração do Growth Engine + EG.Tech',
+    client: 'IW Tour – Viagens Iniciáticas',
+    industry: 'Turismo transformacional (B2C nichado)',
+    challenge: 'Falta de previsibilidade em geração de leads, dependência de indicações e mídia orgânica fraca.',
+    solution: 'Criação de campanhas de aquisição com tráfego pago, landing pages com CRO, segmentação por arquétipos e automação de nutrição com storytelling emocional.',
     results: [
-      'Crescimento de 500% em vendas',
-      'Automação de 80% dos processos',
-      'Expansão para 3 novos mercados',
+      '+350% em geração de leads qualificados',
+      'ROI positivo na 2ª campanha',
+      'Primeira fila de lançamento esgotada em 48h'
     ],
     metrics: {
       before: {
-        revenue: 'R$ 100k/mês',
-        processes: '20% automação',
-        markets: '1 mercado',
+        leads: '60/mês',
+        cac: 'R$ 200',
+        vagas: '8 preenchidas'
       },
       after: {
-        revenue: 'R$ 600k/mês',
-        processes: '80% automação',
-        markets: '4 mercados',
-      },
-    },
-  },
+        leads: '270/mês',
+        cac: 'R$ 92',
+        vagas: '20 preenchidas'
+      }
+    }
+  }
 ]
 
 export default function CasesPage() {
@@ -102,7 +103,7 @@ export default function CasesPage() {
                 <div className="grid md:grid-cols-2 gap-12">
                   <div className="space-y-6">
                     <div className="flex items-center space-x-4">
-                      <span className="text-3xl">💼</span>
+                      <ChartBarIcon className="h-8 w-8 text-emerald-600" />
                       <div>
                         <h2 className="text-2xl font-bold">{case_.client}</h2>
                         <p className="text-gray-600">{case_.industry}</p>
@@ -124,7 +125,7 @@ export default function CasesPage() {
                       <ul className="space-y-2">
                         {case_.results.map((result, rIndex) => (
                           <li key={rIndex} className="flex items-center space-x-3">
-                            <span className="text-eg-green">✓</span>
+                            <CheckCircleIcon className="h-5 w-5 text-eg-green" />
                             <span>{result}</span>
                           </li>
                         ))}

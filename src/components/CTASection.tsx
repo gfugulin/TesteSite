@@ -4,6 +4,7 @@ import AnimatedSection from './AnimatedSection'
 import GradientBackground from './interactive/GradientBackground'
 import InteractiveButton from './interactive/InteractiveButton'
 import ParticlesBackground from './interactive/ParticlesBackground'
+import Link from 'next/link'
 
 export default function CTASection() {
   return (
@@ -26,12 +27,16 @@ export default function CTASection() {
 
               <AnimatedSection delay={300}>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <InteractiveButton variant="primary">
-                    Agendar Diagnóstico Gratuito
-                  </InteractiveButton>
-                  <InteractiveButton variant="outline">
-                    Ver Cases de Sucesso
-                  </InteractiveButton>
+                  <Link href="/contato">
+                    <InteractiveButton variant="primary">
+                      Agendar Diagnóstico Gratuito
+                    </InteractiveButton>
+                  </Link>
+                  <Link href="/cases">
+                    <InteractiveButton variant="outline">
+                      Ver Cases de Sucesso
+                    </InteractiveButton>
+                  </Link>
                 </div>
               </AnimatedSection>
             </div>

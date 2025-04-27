@@ -1,0 +1,1137 @@
+[25-Apr-2025 19:19:30 UTC] Tentando enviar email para: gustavofugulinsds@evergreenmkt.com.br
+[25-Apr-2025 19:19:30 UTC] Dados do formulário: WP_REST_Request Object
+(
+    [method:protected] => POST
+    [params:protected] => Array
+        (
+            [URL] => Array
+                (
+                )
+
+            [GET] => Array
+                (
+                )
+
+            [POST] => Array
+                (
+                    ['{nome:Teste,email:teste@teste_com,mensagem:Mensagem_de_teste}'] => 
+                )
+
+            [FILES] => Array
+                (
+                )
+
+            [JSON] => 
+            [defaults] => Array
+                (
+                )
+
+        )
+
+    [headers:protected] => Array
+        (
+            [accept] => Array
+                (
+                    [0] => */*
+                )
+
+            [connection] => Array
+                (
+                    [0] => 
+                )
+
+            [content_type] => Array
+                (
+                    [0] => application/x-www-form-urlencoded
+                )
+
+            [content_length] => Array
+                (
+                    [0] => 63
+                )
+
+            [host] => Array
+                (
+                    [0] => evergreenmkt.com.br
+                )
+
+            [user_agent] => Array
+                (
+                    [0] => curl/8.9.1
+                )
+
+            [x_forwarded_for] => Array
+                (
+                    [0] => 187.37.84.52
+                )
+
+            [x_real_ip] => Array
+                (
+                    [0] => 187.37.84.52
+                )
+
+            [x_eig_origin] => Array
+                (
+                    [0] => 162.241.203.252
+                )
+
+            [x_https] => Array
+                (
+                    [0] => 1
+                )
+
+            [authorization] => Array
+                (
+                    [0] => 
+                )
+
+        )
+
+    [body:protected] => '{nome:Teste,email:teste@teste.com,mensagem:Mensagem de teste}'
+    [route:protected] => /evergreen/v1/contato
+    [attributes:protected] => Array
+        (
+            [methods] => Array
+                (
+                    [POST] => 1
+                )
+
+            [accept_json] => 
+            [accept_raw] => 
+            [show_in_index] => 1
+            [args] => Array
+                (
+                )
+
+            [callback] => processar_formulario_contato
+            [permission_callback] => __return_true
+        )
+
+    [parsed_json:protected] => 1
+    [parsed_body:protected] => 
+)
+
+[25-Apr-2025 19:19:30 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/plugins/enable-cors/src/Helpers/Headers.php on line 28
+[25-Apr-2025 19:19:30 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 346
+[25-Apr-2025 19:19:30 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 347
+[25-Apr-2025 19:19:30 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 348
+[25-Apr-2025 16:20:07 America/Fortaleza] PHP Warning:  Undefined array key "HTTP_X_FORWARDED_PROTO" in /home4/comu5801/evergreenmkt.com.br/wp-config.php on line 57
+[25-Apr-2025 19:20:08 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/plugins/enable-cors/src/Helpers/Headers.php on line 28
+[25-Apr-2025 19:20:08 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 346
+[25-Apr-2025 19:20:08 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 347
+[25-Apr-2025 19:20:08 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 348
+[25-Apr-2025 16:20:49 America/Fortaleza] PHP Warning:  Undefined array key "HTTP_X_FORWARDED_PROTO" in /home4/comu5801/evergreenmkt.com.br/wp-config.php on line 57
+[25-Apr-2025 16:20:50 America/Fortaleza] PHP Warning:  Undefined array key "HTTP_X_FORWARDED_PROTO" in /home4/comu5801/evergreenmkt.com.br/wp-config.php on line 57
+[25-Apr-2025 16:20:50 America/Fortaleza] PHP Warning:  Undefined array key "HTTP_X_FORWARDED_PROTO" in /home4/comu5801/evergreenmkt.com.br/wp-config.php on line 57
+[25-Apr-2025 19:20:50 UTC] Tentando enviar email para: gustavofugulinsds@evergreenmkt.com.br
+[25-Apr-2025 19:20:50 UTC] Dados do formulário: WP_REST_Request Object
+(
+    [method:protected] => POST
+    [params:protected] => Array
+        (
+            [URL] => Array
+                (
+                )
+
+            [GET] => Array
+                (
+                )
+
+            [POST] => Array
+                (
+                )
+
+            [FILES] => Array
+                (
+                )
+
+            [JSON] => Array
+                (
+                    [nome] => teste
+                    [email] => teste@teste.com
+                    [mensagem] => asdasdsadsa
+                    [tipo] => Contato via Site
+                    [_wpnonce] => 1
+                )
+
+            [defaults] => Array
+                (
+                )
+
+        )
+
+    [headers:protected] => Array
+        (
+            [accept] => Array
+                (
+                    [0] => application/json
+                )
+
+            [accept_encoding] => Array
+                (
+                    [0] => gzip, deflate, br, zstd
+                )
+
+            [accept_language] => Array
+                (
+                    [0] => pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7
+                )
+
+            [connection] => Array
+                (
+                    [0] => 
+                )
+
+            [content_type] => Array
+                (
+                    [0] => application/json
+                )
+
+            [content_length] => Array
+                (
+                    [0] => 109
+                )
+
+            [host] => Array
+                (
+                    [0] => evergreenmkt.com.br
+                )
+
+            [pragma] => Array
+                (
+                    [0] => no-cache
+                )
+
+            [referer] => Array
+                (
+                    [0] => http://localhost:3000/
+                )
+
+            [user_agent] => Array
+                (
+                    [0] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36
+                )
+
+            [cache_control] => Array
+                (
+                    [0] => no-cache
+                )
+
+            [x_forwarded_for] => Array
+                (
+                    [0] => 187.37.84.52
+                )
+
+            [sec_ch_ua_platform] => Array
+                (
+                    [0] => "Windows"
+                )
+
+            [sec_ch_ua] => Array
+                (
+                    [0] => "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+                )
+
+            [sec_ch_ua_mobile] => Array
+                (
+                    [0] => ?0
+                )
+
+            [origin] => Array
+                (
+                    [0] => http://localhost:3000
+                )
+
+            [sec_fetch_site] => Array
+                (
+                    [0] => cross-site
+                )
+
+            [sec_fetch_mode] => Array
+                (
+                    [0] => cors
+                )
+
+            [sec_fetch_dest] => Array
+                (
+                    [0] => empty
+                )
+
+            [priority] => Array
+                (
+                    [0] => u=1, i
+                )
+
+            [x_real_ip] => Array
+                (
+                    [0] => 187.37.84.52
+                )
+
+            [x_eig_origin] => Array
+                (
+                    [0] => 162.241.203.252
+                )
+
+            [x_https] => Array
+                (
+                    [0] => 1
+                )
+
+            [authorization] => Array
+                (
+                    [0] => 
+                )
+
+        )
+
+    [body:protected] => {"nome":"teste","email":"teste@teste.com","mensagem":"asdasdsadsa","tipo":"Contato via Site","_wpnonce":true}
+    [route:protected] => /evergreen/v1/contato
+    [attributes:protected] => Array
+        (
+            [methods] => Array
+                (
+                    [POST] => 1
+                )
+
+            [accept_json] => 
+            [accept_raw] => 
+            [show_in_index] => 1
+            [args] => Array
+                (
+                )
+
+            [callback] => processar_formulario_contato
+            [permission_callback] => __return_true
+        )
+
+    [parsed_json:protected] => 1
+    [parsed_body:protected] => 
+)
+
+[25-Apr-2025 19:20:50 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/plugins/enable-cors/src/Helpers/Headers.php on line 28
+[25-Apr-2025 19:20:51 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 346
+[25-Apr-2025 19:20:51 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 347
+[25-Apr-2025 19:20:51 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 348
+[25-Apr-2025 16:21:08 America/Fortaleza] PHP Warning:  Undefined array key "HTTP_X_FORWARDED_PROTO" in /home4/comu5801/evergreenmkt.com.br/wp-config.php on line 57
+[25-Apr-2025 19:21:08 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/plugins/enable-cors/src/Helpers/Headers.php on line 28
+[25-Apr-2025 19:21:08 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 346
+[25-Apr-2025 19:21:08 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 347
+[25-Apr-2025 19:21:08 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 348
+[25-Apr-2025 16:22:14 America/Fortaleza] PHP Warning:  Undefined array key "HTTP_X_FORWARDED_PROTO" in /home4/comu5801/evergreenmkt.com.br/wp-config.php on line 57
+[25-Apr-2025 16:22:14 America/Fortaleza] PHP Warning:  Undefined array key "HTTP_X_FORWARDED_PROTO" in /home4/comu5801/evergreenmkt.com.br/wp-config.php on line 57
+[25-Apr-2025 16:22:14 America/Fortaleza] PHP Warning:  Undefined array key "HTTP_X_FORWARDED_PROTO" in /home4/comu5801/evergreenmkt.com.br/wp-config.php on line 57
+[25-Apr-2025 19:22:14 UTC] Tentando enviar email para: gustavofugulinsds@evergreenmkt.com.br
+[25-Apr-2025 19:22:14 UTC] Dados do formulário: WP_REST_Request Object
+(
+    [method:protected] => POST
+    [params:protected] => Array
+        (
+            [URL] => Array
+                (
+                )
+
+            [GET] => Array
+                (
+                )
+
+            [POST] => Array
+                (
+                )
+
+            [FILES] => Array
+                (
+                )
+
+            [JSON] => Array
+                (
+                    [nome] => tsseass
+                    [email] => teste@teste.com
+                    [mensagem] => rterweds
+                    [tipo] => Contato via Site
+                    [_wpnonce] => 1
+                )
+
+            [defaults] => Array
+                (
+                )
+
+        )
+
+    [headers:protected] => Array
+        (
+            [accept] => Array
+                (
+                    [0] => application/json
+                )
+
+            [accept_encoding] => Array
+                (
+                    [0] => gzip, deflate, br, zstd
+                )
+
+            [accept_language] => Array
+                (
+                    [0] => pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7
+                )
+
+            [connection] => Array
+                (
+                    [0] => 
+                )
+
+            [content_type] => Array
+                (
+                    [0] => application/json
+                )
+
+            [content_length] => Array
+                (
+                    [0] => 108
+                )
+
+            [host] => Array
+                (
+                    [0] => evergreenmkt.com.br
+                )
+
+            [pragma] => Array
+                (
+                    [0] => no-cache
+                )
+
+            [referer] => Array
+                (
+                    [0] => http://localhost:3000/
+                )
+
+            [user_agent] => Array
+                (
+                    [0] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36
+                )
+
+            [cache_control] => Array
+                (
+                    [0] => no-cache
+                )
+
+            [x_forwarded_for] => Array
+                (
+                    [0] => 187.37.84.52
+                )
+
+            [sec_ch_ua_platform] => Array
+                (
+                    [0] => "Windows"
+                )
+
+            [sec_ch_ua] => Array
+                (
+                    [0] => "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+                )
+
+            [sec_ch_ua_mobile] => Array
+                (
+                    [0] => ?0
+                )
+
+            [origin] => Array
+                (
+                    [0] => http://localhost:3000
+                )
+
+            [sec_fetch_site] => Array
+                (
+                    [0] => cross-site
+                )
+
+            [sec_fetch_mode] => Array
+                (
+                    [0] => cors
+                )
+
+            [sec_fetch_dest] => Array
+                (
+                    [0] => empty
+                )
+
+            [priority] => Array
+                (
+                    [0] => u=1, i
+                )
+
+            [x_real_ip] => Array
+                (
+                    [0] => 187.37.84.52
+                )
+
+            [x_eig_origin] => Array
+                (
+                    [0] => 162.241.203.252
+                )
+
+            [x_https] => Array
+                (
+                    [0] => 1
+                )
+
+            [authorization] => Array
+                (
+                    [0] => 
+                )
+
+        )
+
+    [body:protected] => {"nome":"tsseass","email":"teste@teste.com","mensagem":"rterweds","tipo":"Contato via Site","_wpnonce":true}
+    [route:protected] => /evergreen/v1/contato
+    [attributes:protected] => Array
+        (
+            [methods] => Array
+                (
+                    [POST] => 1
+                )
+
+            [accept_json] => 
+            [accept_raw] => 
+            [show_in_index] => 1
+            [args] => Array
+                (
+                )
+
+            [callback] => processar_formulario_contato
+            [permission_callback] => __return_true
+        )
+
+    [parsed_json:protected] => 1
+    [parsed_body:protected] => 
+)
+
+[25-Apr-2025 19:22:14 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/plugins/enable-cors/src/Helpers/Headers.php on line 28
+[25-Apr-2025 19:22:14 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 346
+[25-Apr-2025 19:22:14 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 347
+[25-Apr-2025 19:22:14 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 348
+[25-Apr-2025 16:23:09 America/Fortaleza] PHP Warning:  Undefined array key "HTTP_X_FORWARDED_PROTO" in /home4/comu5801/evergreenmkt.com.br/wp-config.php on line 57
+[25-Apr-2025 19:23:09 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/plugins/enable-cors/src/Helpers/Headers.php on line 28
+[25-Apr-2025 19:23:09 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 346
+[25-Apr-2025 19:23:09 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 347
+[25-Apr-2025 19:23:09 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 348
+[25-Apr-2025 19:23:53 UTC] Resultado do envio: falha
+[25-Apr-2025 16:25:08 America/Fortaleza] PHP Warning:  Undefined array key "HTTP_X_FORWARDED_PROTO" in /home4/comu5801/evergreenmkt.com.br/wp-config.php on line 57
+[25-Apr-2025 16:25:09 America/Fortaleza] PHP Warning:  Undefined array key "HTTP_X_FORWARDED_PROTO" in /home4/comu5801/evergreenmkt.com.br/wp-config.php on line 57
+[25-Apr-2025 16:25:09 America/Fortaleza] PHP Warning:  Undefined array key "HTTP_X_FORWARDED_PROTO" in /home4/comu5801/evergreenmkt.com.br/wp-config.php on line 57
+[25-Apr-2025 19:25:09 UTC] Tentando enviar email para: gustavofugulinsds@evergreenmkt.com.br
+[25-Apr-2025 19:25:09 UTC] Dados do formulário: WP_REST_Request Object
+(
+    [method:protected] => POST
+    [params:protected] => Array
+        (
+            [URL] => Array
+                (
+                )
+
+            [GET] => Array
+                (
+                )
+
+            [POST] => Array
+                (
+                )
+
+            [FILES] => Array
+                (
+                )
+
+            [JSON] => Array
+                (
+                    [nome] => Teste
+                    [email] => teste@teste.com
+                    [mensagem] => asdsadasdsa
+
+                    [tipo] => Contato via Site
+                    [_wpnonce] => 1
+                )
+
+            [defaults] => Array
+                (
+                )
+
+        )
+
+    [headers:protected] => Array
+        (
+            [accept] => Array
+                (
+                    [0] => application/json
+                )
+
+            [accept_encoding] => Array
+                (
+                    [0] => gzip, deflate, br, zstd
+                )
+
+            [accept_language] => Array
+                (
+                    [0] => pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7
+                )
+
+            [connection] => Array
+                (
+                    [0] => 
+                )
+
+            [content_type] => Array
+                (
+                    [0] => application/json
+                )
+
+            [content_length] => Array
+                (
+                    [0] => 111
+                )
+
+            [host] => Array
+                (
+                    [0] => evergreenmkt.com.br
+                )
+
+            [pragma] => Array
+                (
+                    [0] => no-cache
+                )
+
+            [referer] => Array
+                (
+                    [0] => http://localhost:3000/
+                )
+
+            [user_agent] => Array
+                (
+                    [0] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36
+                )
+
+            [cache_control] => Array
+                (
+                    [0] => no-cache
+                )
+
+            [x_forwarded_for] => Array
+                (
+                    [0] => 187.37.84.52
+                )
+
+            [sec_ch_ua_platform] => Array
+                (
+                    [0] => "Windows"
+                )
+
+            [sec_ch_ua] => Array
+                (
+                    [0] => "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+                )
+
+            [sec_ch_ua_mobile] => Array
+                (
+                    [0] => ?0
+                )
+
+            [origin] => Array
+                (
+                    [0] => http://localhost:3000
+                )
+
+            [sec_fetch_site] => Array
+                (
+                    [0] => cross-site
+                )
+
+            [sec_fetch_mode] => Array
+                (
+                    [0] => cors
+                )
+
+            [sec_fetch_dest] => Array
+                (
+                    [0] => empty
+                )
+
+            [priority] => Array
+                (
+                    [0] => u=1, i
+                )
+
+            [x_real_ip] => Array
+                (
+                    [0] => 187.37.84.52
+                )
+
+            [x_eig_origin] => Array
+                (
+                    [0] => 162.241.203.252
+                )
+
+            [x_https] => Array
+                (
+                    [0] => 1
+                )
+
+            [authorization] => Array
+                (
+                    [0] => 
+                )
+
+        )
+
+    [body:protected] => {"nome":"Teste","email":"teste@teste.com","mensagem":"asdsadasdsa\n","tipo":"Contato via Site","_wpnonce":true}
+    [route:protected] => /evergreen/v1/contato
+    [attributes:protected] => Array
+        (
+            [methods] => Array
+                (
+                    [POST] => 1
+                )
+
+            [accept_json] => 
+            [accept_raw] => 
+            [show_in_index] => 1
+            [args] => Array
+                (
+                )
+
+            [callback] => processar_formulario_contato
+            [permission_callback] => __return_true
+        )
+
+    [parsed_json:protected] => 1
+    [parsed_body:protected] => 
+)
+
+[25-Apr-2025 19:25:09 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/plugins/enable-cors/src/Helpers/Headers.php on line 28
+[25-Apr-2025 19:25:09 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 346
+[25-Apr-2025 19:25:09 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 347
+[25-Apr-2025 19:25:09 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 348
+[25-Apr-2025 19:25:11 UTC] Resultado do envio: falha
+[25-Apr-2025 19:26:37 UTC] Resultado do envio: falha
+[25-Apr-2025 16:27:11 America/Fortaleza] PHP Warning:  Undefined array key "HTTP_X_FORWARDED_PROTO" in /home4/comu5801/evergreenmkt.com.br/wp-config.php on line 57
+[25-Apr-2025 19:27:11 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/plugins/enable-cors/src/Helpers/Headers.php on line 28
+[25-Apr-2025 19:27:11 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 346
+[25-Apr-2025 19:27:11 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 347
+[25-Apr-2025 19:27:11 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 348
+[25-Apr-2025 16:29:12 America/Fortaleza] PHP Warning:  Undefined array key "HTTP_X_FORWARDED_PROTO" in /home4/comu5801/evergreenmkt.com.br/wp-config.php on line 57
+[25-Apr-2025 19:29:12 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/plugins/enable-cors/src/Helpers/Headers.php on line 28
+[25-Apr-2025 19:29:12 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 346
+[25-Apr-2025 19:29:12 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 347
+[25-Apr-2025 19:29:12 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 348
+[25-Apr-2025 19:29:29 UTC] Resultado do envio: falha
+[25-Apr-2025 16:31:03 America/Fortaleza] PHP Warning:  Undefined array key "HTTP_X_FORWARDED_PROTO" in /home4/comu5801/evergreenmkt.com.br/wp-config.php on line 57
+[25-Apr-2025 16:31:03 America/Fortaleza] PHP Warning:  Undefined array key "HTTP_X_FORWARDED_PROTO" in /home4/comu5801/evergreenmkt.com.br/wp-config.php on line 57
+[25-Apr-2025 19:31:03 UTC] Tentando enviar email para: gustavofugulinsds@evergreenmkt.com.br
+[25-Apr-2025 19:31:03 UTC] Dados do formulário: WP_REST_Request Object
+(
+    [method:protected] => POST
+    [params:protected] => Array
+        (
+            [URL] => Array
+                (
+                )
+
+            [GET] => Array
+                (
+                )
+
+            [POST] => Array
+                (
+                )
+
+            [FILES] => Array
+                (
+                )
+
+            [JSON] => Array
+                (
+                    [nome] => Teste
+                    [email] => teste@teste.com
+                    [mensagem] => Teste de mensagem
+                )
+
+            [defaults] => Array
+                (
+                )
+
+        )
+
+    [headers:protected] => Array
+        (
+            [accept] => Array
+                (
+                    [0] => */*
+                )
+
+            [connection] => Array
+                (
+                    [0] => 
+                )
+
+            [content_type] => Array
+                (
+                    [0] => application/json
+                )
+
+            [content_length] => Array
+                (
+                    [0] => 73
+                )
+
+            [host] => Array
+                (
+                    [0] => evergreenmkt.com.br
+                )
+
+            [user_agent] => Array
+                (
+                    [0] => curl/8.9.1
+                )
+
+            [x_forwarded_for] => Array
+                (
+                    [0] => 187.37.84.52
+                )
+
+            [x_real_ip] => Array
+                (
+                    [0] => 187.37.84.52
+                )
+
+            [x_eig_origin] => Array
+                (
+                    [0] => 162.241.203.252
+                )
+
+            [x_https] => Array
+                (
+                    [0] => 1
+                )
+
+            [authorization] => Array
+                (
+                    [0] => 
+                )
+
+        )
+
+    [body:protected] => {"nome":"Teste","email":"teste@teste.com","mensagem":"Teste de mensagem"}
+    [route:protected] => /evergreen/v1/contato
+    [attributes:protected] => Array
+        (
+            [methods] => Array
+                (
+                    [POST] => 1
+                )
+
+            [accept_json] => 
+            [accept_raw] => 
+            [show_in_index] => 1
+            [args] => Array
+                (
+                )
+
+            [callback] => processar_formulario_contato
+            [permission_callback] => __return_true
+        )
+
+    [parsed_json:protected] => 1
+    [parsed_body:protected] => 
+)
+
+[25-Apr-2025 19:31:03 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/plugins/enable-cors/src/Helpers/Headers.php on line 28
+[25-Apr-2025 19:31:03 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 346
+[25-Apr-2025 19:31:03 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 347
+[25-Apr-2025 19:31:03 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 348
+[25-Apr-2025 19:35:25 UTC] Resultado do envio: falha
+[25-Apr-2025 16:37:27 America/Fortaleza] PHP Warning:  Undefined array key "HTTP_X_FORWARDED_PROTO" in /home4/comu5801/evergreenmkt.com.br/wp-config.php on line 57
+[25-Apr-2025 19:37:27 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/plugins/enable-cors/src/Helpers/Headers.php on line 28
+[25-Apr-2025 19:37:27 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 346
+[25-Apr-2025 19:37:27 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 347
+[25-Apr-2025 19:37:27 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 348
+[25-Apr-2025 19:37:27 UTC] WordPress inicializado
+[25-Apr-2025 16:37:29 America/Fortaleza] PHP Warning:  Undefined array key "HTTP_X_FORWARDED_PROTO" in /home4/comu5801/evergreenmkt.com.br/wp-config.php on line 57
+[25-Apr-2025 19:37:29 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/plugins/enable-cors/src/Helpers/Headers.php on line 28
+[25-Apr-2025 19:37:29 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 346
+[25-Apr-2025 19:37:29 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 347
+[25-Apr-2025 19:37:29 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 348
+[25-Apr-2025 19:37:29 UTC] WordPress inicializado
+[25-Apr-2025 16:37:30 America/Fortaleza] PHP Warning:  Undefined array key "HTTP_X_FORWARDED_PROTO" in /home4/comu5801/evergreenmkt.com.br/wp-config.php on line 57
+[25-Apr-2025 19:37:30 UTC] WordPress inicializado
+[25-Apr-2025 19:37:30 UTC] Registrando endpoint de contato
+[25-Apr-2025 19:37:30 UTC] Endpoint registrado com sucesso
+[25-Apr-2025 16:37:32 America/Fortaleza] PHP Warning:  Undefined array key "HTTP_X_FORWARDED_PROTO" in /home4/comu5801/evergreenmkt.com.br/wp-config.php on line 57
+[25-Apr-2025 19:37:32 UTC] WordPress inicializado
+[25-Apr-2025 19:37:32 UTC] Registrando endpoint de contato
+[25-Apr-2025 19:37:32 UTC] Endpoint registrado com sucesso
+[25-Apr-2025 16:37:34 America/Fortaleza] PHP Warning:  Undefined array key "HTTP_X_FORWARDED_PROTO" in /home4/comu5801/evergreenmkt.com.br/wp-config.php on line 57
+[25-Apr-2025 19:37:34 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/plugins/enable-cors/src/Helpers/Headers.php on line 28
+[25-Apr-2025 19:37:35 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 346
+[25-Apr-2025 19:37:35 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 347
+[25-Apr-2025 19:37:35 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 348
+[25-Apr-2025 19:37:35 UTC] WordPress inicializado
+[25-Apr-2025 16:38:20 America/Fortaleza] PHP Warning:  Undefined array key "HTTP_X_FORWARDED_PROTO" in /home4/comu5801/evergreenmkt.com.br/wp-config.php on line 57
+[25-Apr-2025 19:38:20 UTC] WordPress inicializado
+[25-Apr-2025 16:38:20 America/Fortaleza] PHP Warning:  Undefined array key "HTTP_X_FORWARDED_PROTO" in /home4/comu5801/evergreenmkt.com.br/wp-config.php on line 57
+[25-Apr-2025 19:38:20 UTC] Registrando endpoint de contato
+[25-Apr-2025 19:38:20 UTC] Endpoint registrado com sucesso
+[25-Apr-2025 19:38:20 UTC] Recebendo requisição de contato
+[25-Apr-2025 19:38:20 UTC] Dados recebidos: Array
+(
+    [nome] => Teste
+    [email] => teste@teste.com
+    [mensagem] => Teste de mensagem
+)
+
+[25-Apr-2025 19:38:20 UTC] Dados sanitizados - Nome: Teste, Email: teste@teste.com
+[25-Apr-2025 19:38:20 UTC] Tentando enviar email...
+[25-Apr-2025 19:38:21 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/plugins/enable-cors/src/Helpers/Headers.php on line 28
+[25-Apr-2025 19:38:21 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 346
+[25-Apr-2025 19:38:21 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 347
+[25-Apr-2025 19:38:21 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 348
+[25-Apr-2025 19:38:21 UTC] WordPress inicializado
+[25-Apr-2025 16:38:36 America/Fortaleza] PHP Warning:  Undefined array key "HTTP_X_FORWARDED_PROTO" in /home4/comu5801/evergreenmkt.com.br/wp-config.php on line 57
+[25-Apr-2025 19:38:36 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/plugins/enable-cors/src/Helpers/Headers.php on line 28
+[25-Apr-2025 19:38:36 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 346
+[25-Apr-2025 19:38:36 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 347
+[25-Apr-2025 19:38:36 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 348
+[25-Apr-2025 19:38:36 UTC] WordPress inicializado
+[25-Apr-2025 16:40:37 America/Fortaleza] PHP Warning:  Undefined array key "HTTP_X_FORWARDED_PROTO" in /home4/comu5801/evergreenmkt.com.br/wp-config.php on line 57
+[25-Apr-2025 19:40:37 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/plugins/enable-cors/src/Helpers/Headers.php on line 28
+[25-Apr-2025 19:40:37 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 346
+[25-Apr-2025 19:40:37 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 347
+[25-Apr-2025 19:40:37 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 348
+[25-Apr-2025 19:40:37 UTC] WordPress inicializado
+[25-Apr-2025 16:42:28 America/Fortaleza] PHP Warning:  Undefined array key "HTTP_X_FORWARDED_PROTO" in /home4/comu5801/evergreenmkt.com.br/wp-config.php on line 57
+[25-Apr-2025 19:42:28 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/plugins/enable-cors/src/Helpers/Headers.php on line 28
+[25-Apr-2025 19:42:28 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 346
+[25-Apr-2025 19:42:28 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 347
+[25-Apr-2025 19:42:28 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 348
+[25-Apr-2025 19:42:28 UTC] WordPress inicializado
+[25-Apr-2025 19:42:44 UTC] Resultado do envio: falha
+[25-Apr-2025 16:43:29 America/Fortaleza] PHP Warning:  Undefined array key "HTTP_X_FORWARDED_PROTO" in /home4/comu5801/evergreenmkt.com.br/wp-config.php on line 57
+[25-Apr-2025 19:43:29 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/plugins/enable-cors/src/Helpers/Headers.php on line 28
+[25-Apr-2025 19:43:29 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 346
+[25-Apr-2025 19:43:29 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 347
+[25-Apr-2025 19:43:29 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 348
+[25-Apr-2025 19:43:29 UTC] WordPress inicializado
+[25-Apr-2025 16:44:22 America/Fortaleza] PHP Warning:  Undefined array key "HTTP_X_FORWARDED_PROTO" in /home4/comu5801/evergreenmkt.com.br/wp-config.php on line 57
+[25-Apr-2025 19:44:22 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/plugins/enable-cors/src/Helpers/Headers.php on line 28
+[25-Apr-2025 19:44:22 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 346
+[25-Apr-2025 19:44:22 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 347
+[25-Apr-2025 19:44:22 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 348
+[25-Apr-2025 19:44:22 UTC] WordPress inicializado
+[25-Apr-2025 16:44:23 America/Fortaleza] PHP Warning:  Undefined array key "HTTP_X_FORWARDED_PROTO" in /home4/comu5801/evergreenmkt.com.br/wp-config.php on line 57
+[25-Apr-2025 19:44:23 UTC] WordPress inicializado
+[25-Apr-2025 19:44:23 UTC] Registrando endpoint de contato
+[25-Apr-2025 19:44:23 UTC] Endpoint registrado com sucesso
+[25-Apr-2025 16:44:47 America/Fortaleza] PHP Warning:  Undefined array key "HTTP_X_FORWARDED_PROTO" in /home4/comu5801/evergreenmkt.com.br/wp-config.php on line 57
+[25-Apr-2025 19:44:48 UTC] WordPress inicializado
+[25-Apr-2025 16:44:48 America/Fortaleza] PHP Warning:  Undefined array key "HTTP_X_FORWARDED_PROTO" in /home4/comu5801/evergreenmkt.com.br/wp-config.php on line 57
+[25-Apr-2025 19:44:48 UTC] Registrando endpoint de contato
+[25-Apr-2025 19:44:48 UTC] Endpoint registrado com sucesso
+[25-Apr-2025 19:44:48 UTC] Recebendo requisição de contato
+[25-Apr-2025 19:44:48 UTC] Dados recebidos: Array
+(
+    [nome] => Teste
+    [email] => teste@teste.com
+    [mensagem] => Teste de mensagem
+)
+
+[25-Apr-2025 19:44:48 UTC] Dados sanitizados - Nome: Teste, Email: teste@teste.com
+[25-Apr-2025 19:44:48 UTC] Tentando enviar email...
+[25-Apr-2025 19:44:48 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/plugins/enable-cors/src/Helpers/Headers.php on line 28
+[25-Apr-2025 19:44:48 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 346
+[25-Apr-2025 19:44:48 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 347
+[25-Apr-2025 19:44:48 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 348
+[25-Apr-2025 19:44:48 UTC] WordPress inicializado
+[25-Apr-2025 16:45:26 America/Fortaleza] PHP Warning:  Undefined array key "HTTP_X_FORWARDED_PROTO" in /home4/comu5801/evergreenmkt.com.br/wp-config.php on line 57
+[25-Apr-2025 19:45:26 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/plugins/enable-cors/src/Helpers/Headers.php on line 28
+[25-Apr-2025 19:45:26 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 346
+[25-Apr-2025 19:45:26 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 347
+[25-Apr-2025 19:45:26 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 348
+[25-Apr-2025 19:45:26 UTC] WordPress inicializado
+[25-Apr-2025 16:47:27 America/Fortaleza] PHP Warning:  Undefined array key "HTTP_X_FORWARDED_PROTO" in /home4/comu5801/evergreenmkt.com.br/wp-config.php on line 57
+[25-Apr-2025 19:47:27 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/plugins/enable-cors/src/Helpers/Headers.php on line 28
+[25-Apr-2025 19:47:27 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 346
+[25-Apr-2025 19:47:27 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 347
+[25-Apr-2025 19:47:27 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 348
+[25-Apr-2025 19:47:27 UTC] WordPress inicializado
+[25-Apr-2025 19:49:09 UTC] Resultado do envio: falha
+[25-Apr-2025 19:49:09 UTC] === Preparando resposta do endpoint ===
+[25-Apr-2025 16:49:28 America/Fortaleza] PHP Warning:  Undefined array key "HTTP_X_FORWARDED_PROTO" in /home4/comu5801/evergreenmkt.com.br/wp-config.php on line 57
+[25-Apr-2025 19:49:28 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/plugins/enable-cors/src/Helpers/Headers.php on line 28
+[25-Apr-2025 19:49:28 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 346
+[25-Apr-2025 19:49:28 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 347
+[25-Apr-2025 19:49:28 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 348
+[25-Apr-2025 19:49:28 UTC] WordPress inicializado
+[25-Apr-2025 16:51:29 America/Fortaleza] PHP Warning:  Undefined array key "HTTP_X_FORWARDED_PROTO" in /home4/comu5801/evergreenmkt.com.br/wp-config.php on line 57
+[25-Apr-2025 19:51:29 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/plugins/enable-cors/src/Helpers/Headers.php on line 28
+[25-Apr-2025 19:51:29 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 346
+[25-Apr-2025 19:51:29 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 347
+[25-Apr-2025 19:51:29 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 348
+[25-Apr-2025 19:51:29 UTC] WordPress inicializado
+[25-Apr-2025 16:53:30 America/Fortaleza] PHP Warning:  Undefined array key "HTTP_X_FORWARDED_PROTO" in /home4/comu5801/evergreenmkt.com.br/wp-config.php on line 57
+[25-Apr-2025 19:53:30 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/plugins/enable-cors/src/Helpers/Headers.php on line 28
+[25-Apr-2025 19:53:30 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 346
+[25-Apr-2025 19:53:30 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 347
+[25-Apr-2025 19:53:30 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 348
+[25-Apr-2025 19:53:30 UTC] WordPress inicializado
+[25-Apr-2025 16:53:43 America/Fortaleza] PHP Warning:  Undefined array key "HTTP_X_FORWARDED_PROTO" in /home4/comu5801/evergreenmkt.com.br/wp-config.php on line 57
+[25-Apr-2025 19:53:43 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/plugins/enable-cors/src/Helpers/Headers.php on line 28
+[25-Apr-2025 19:53:43 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 372
+[25-Apr-2025 19:53:43 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 373
+[25-Apr-2025 19:53:43 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 374
+[25-Apr-2025 19:53:43 UTC] WordPress inicializado
+[25-Apr-2025 16:53:44 America/Fortaleza] PHP Warning:  Undefined array key "HTTP_X_FORWARDED_PROTO" in /home4/comu5801/evergreenmkt.com.br/wp-config.php on line 57
+[25-Apr-2025 19:53:44 UTC] WordPress inicializado
+[25-Apr-2025 19:53:44 UTC] Registrando endpoint de contato
+[25-Apr-2025 19:53:44 UTC] Endpoint registrado com sucesso
+[25-Apr-2025 16:54:21 America/Fortaleza] PHP Warning:  Undefined array key "HTTP_X_FORWARDED_PROTO" in /home4/comu5801/evergreenmkt.com.br/wp-config.php on line 57
+[25-Apr-2025 19:54:22 UTC] WordPress inicializado
+[25-Apr-2025 16:54:22 America/Fortaleza] PHP Warning:  Undefined array key "HTTP_X_FORWARDED_PROTO" in /home4/comu5801/evergreenmkt.com.br/wp-config.php on line 57
+[25-Apr-2025 19:54:22 UTC] Registrando endpoint de contato
+[25-Apr-2025 19:54:22 UTC] Endpoint registrado com sucesso
+[25-Apr-2025 19:54:22 UTC] === Início do processamento do formulário ===
+[25-Apr-2025 19:54:22 UTC] Tentando enviar email para: gustavofugulinsds@evergreenmkt.com.br
+[25-Apr-2025 19:54:22 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/plugins/enable-cors/src/Helpers/Headers.php on line 28
+[25-Apr-2025 19:54:22 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 372
+[25-Apr-2025 19:54:22 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 373
+[25-Apr-2025 19:54:22 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 374
+[25-Apr-2025 19:54:22 UTC] WordPress inicializado
+[25-Apr-2025 16:54:47 America/Fortaleza] PHP Warning:  Undefined array key "HTTP_X_FORWARDED_PROTO" in /home4/comu5801/evergreenmkt.com.br/wp-config.php on line 57
+[25-Apr-2025 19:54:47 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/plugins/enable-cors/src/Helpers/Headers.php on line 28
+[25-Apr-2025 19:54:47 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 372
+[25-Apr-2025 19:54:47 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 373
+[25-Apr-2025 19:54:47 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 374
+[25-Apr-2025 19:54:47 UTC] WordPress inicializado
+[25-Apr-2025 16:54:54 America/Fortaleza] PHP Warning:  Undefined array key "HTTP_X_FORWARDED_PROTO" in /home4/comu5801/evergreenmkt.com.br/wp-config.php on line 57
+[25-Apr-2025 16:54:54 America/Fortaleza] PHP Warning:  Undefined array key "HTTP_X_FORWARDED_PROTO" in /home4/comu5801/evergreenmkt.com.br/wp-config.php on line 57
+[25-Apr-2025 19:54:54 UTC] WordPress inicializado
+[25-Apr-2025 16:54:54 America/Fortaleza] PHP Warning:  Undefined array key "HTTP_X_FORWARDED_PROTO" in /home4/comu5801/evergreenmkt.com.br/wp-config.php on line 57
+[25-Apr-2025 19:54:54 UTC] Registrando endpoint de contato
+[25-Apr-2025 19:54:54 UTC] Endpoint registrado com sucesso
+[25-Apr-2025 19:54:54 UTC] === Início do processamento do formulário ===
+[25-Apr-2025 19:54:54 UTC] Tentando enviar email para: gustavofugulinsds@evergreenmkt.com.br
+[25-Apr-2025 19:54:54 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/plugins/enable-cors/src/Helpers/Headers.php on line 28
+[25-Apr-2025 19:54:54 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 372
+[25-Apr-2025 19:54:54 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 373
+[25-Apr-2025 19:54:54 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 374
+[25-Apr-2025 19:54:54 UTC] WordPress inicializado
+[25-Apr-2025 16:56:48 America/Fortaleza] PHP Warning:  Undefined array key "HTTP_X_FORWARDED_PROTO" in /home4/comu5801/evergreenmkt.com.br/wp-config.php on line 57
+[25-Apr-2025 19:56:48 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/plugins/enable-cors/src/Helpers/Headers.php on line 28
+[25-Apr-2025 19:56:48 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 372
+[25-Apr-2025 19:56:48 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 373
+[25-Apr-2025 19:56:48 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 374
+[25-Apr-2025 19:56:48 UTC] WordPress inicializado
+[25-Apr-2025 19:58:42 UTC] Resultado do envio: falha
+[25-Apr-2025 19:58:42 UTC] Erro no processamento: Falha ao enviar email
+[25-Apr-2025 19:58:42 UTC] === Preparando resposta do endpoint ===
+[25-Apr-2025 16:58:49 America/Fortaleza] PHP Warning:  Undefined array key "HTTP_X_FORWARDED_PROTO" in /home4/comu5801/evergreenmkt.com.br/wp-config.php on line 57
+[25-Apr-2025 19:58:49 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/plugins/enable-cors/src/Helpers/Headers.php on line 28
+[25-Apr-2025 19:58:49 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 372
+[25-Apr-2025 19:58:49 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 373
+[25-Apr-2025 19:58:49 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 374
+[25-Apr-2025 19:58:49 UTC] WordPress inicializado
+[25-Apr-2025 19:59:15 UTC] Resultado do envio: falha
+[25-Apr-2025 19:59:15 UTC] Erro no processamento: Falha ao enviar email
+[25-Apr-2025 19:59:15 UTC] === Preparando resposta do endpoint ===
+[25-Apr-2025 17:00:50 America/Fortaleza] PHP Warning:  Undefined array key "HTTP_X_FORWARDED_PROTO" in /home4/comu5801/evergreenmkt.com.br/wp-config.php on line 57
+[25-Apr-2025 20:00:50 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/plugins/enable-cors/src/Helpers/Headers.php on line 28
+[25-Apr-2025 20:00:50 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 372
+[25-Apr-2025 20:00:50 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 373
+[25-Apr-2025 20:00:50 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 374
+[25-Apr-2025 20:00:50 UTC] WordPress inicializado
+[25-Apr-2025 17:02:26 America/Fortaleza] PHP Warning:  Undefined array key "HTTP_X_FORWARDED_PROTO" in /home4/comu5801/evergreenmkt.com.br/wp-config.php on line 57
+[25-Apr-2025 20:02:27 UTC] WordPress inicializado
+[25-Apr-2025 17:02:27 America/Fortaleza] PHP Warning:  Undefined array key "HTTP_X_FORWARDED_PROTO" in /home4/comu5801/evergreenmkt.com.br/wp-config.php on line 57
+[25-Apr-2025 20:02:27 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/plugins/enable-cors/src/Helpers/Headers.php on line 28
+[25-Apr-2025 20:02:27 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 372
+[25-Apr-2025 20:02:27 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 373
+[25-Apr-2025 20:02:27 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 374
+[25-Apr-2025 20:02:27 UTC] WordPress inicializado
+[25-Apr-2025 17:02:51 America/Fortaleza] PHP Warning:  Undefined array key "HTTP_X_FORWARDED_PROTO" in /home4/comu5801/evergreenmkt.com.br/wp-config.php on line 57
+[25-Apr-2025 20:02:51 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/plugins/enable-cors/src/Helpers/Headers.php on line 28
+[25-Apr-2025 20:02:51 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 372
+[25-Apr-2025 20:02:51 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 373
+[25-Apr-2025 20:02:51 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 374
+[25-Apr-2025 20:02:51 UTC] WordPress inicializado
+[25-Apr-2025 17:04:13 America/Fortaleza] PHP Warning:  Undefined array key "HTTP_X_FORWARDED_PROTO" in /home4/comu5801/evergreenmkt.com.br/wp-config.php on line 57
+[25-Apr-2025 20:04:13 UTC] WordPress inicializado
+[25-Apr-2025 17:04:14 America/Fortaleza] PHP Warning:  Undefined array key "HTTP_X_FORWARDED_PROTO" in /home4/comu5801/evergreenmkt.com.br/wp-config.php on line 57
+[25-Apr-2025 20:04:14 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/plugins/enable-cors/src/Helpers/Headers.php on line 28
+[25-Apr-2025 20:04:14 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 372
+[25-Apr-2025 20:04:14 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 373
+[25-Apr-2025 20:04:14 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 374
+[25-Apr-2025 20:04:14 UTC] WordPress inicializado
+[25-Apr-2025 17:04:52 America/Fortaleza] PHP Warning:  Undefined array key "HTTP_X_FORWARDED_PROTO" in /home4/comu5801/evergreenmkt.com.br/wp-config.php on line 57
+[25-Apr-2025 20:04:52 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/plugins/enable-cors/src/Helpers/Headers.php on line 28
+[25-Apr-2025 20:04:52 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 372
+[25-Apr-2025 20:04:52 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 373
+[25-Apr-2025 20:04:52 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 374
+[25-Apr-2025 20:04:52 UTC] WordPress inicializado
+[25-Apr-2025 17:05:14 America/Fortaleza] PHP Warning:  Undefined array key "HTTP_X_FORWARDED_PROTO" in /home4/comu5801/evergreenmkt.com.br/wp-config.php on line 57
+[25-Apr-2025 17:05:14 America/Fortaleza] PHP Warning:  Undefined array key "HTTP_X_FORWARDED_PROTO" in /home4/comu5801/evergreenmkt.com.br/wp-config.php on line 57
+[25-Apr-2025 20:05:14 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/plugins/enable-cors/src/Helpers/Headers.php on line 28
+[25-Apr-2025 20:05:14 UTC] WordPress inicializado
+[25-Apr-2025 20:05:14 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 381
+[25-Apr-2025 20:05:14 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 382
+[25-Apr-2025 20:05:14 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 383
+[25-Apr-2025 20:05:14 UTC] WordPress inicializado
+[25-Apr-2025 17:05:29 America/Fortaleza] PHP Warning:  Undefined array key "HTTP_X_FORWARDED_PROTO" in /home4/comu5801/evergreenmkt.com.br/wp-config.php on line 57
+[25-Apr-2025 20:05:30 UTC] WordPress inicializado
+[25-Apr-2025 17:05:30 America/Fortaleza] PHP Warning:  Undefined array key "HTTP_X_FORWARDED_PROTO" in /home4/comu5801/evergreenmkt.com.br/wp-config.php on line 57
+[25-Apr-2025 20:05:30 UTC] === Início do processamento do formulário ===
+[25-Apr-2025 20:05:30 UTC] Dados recebidos: Array
+(
+    [nome] => Teste
+    [email] => teste@teste.com
+    [mensagem] => Teste de mensagem
+)
+
+[25-Apr-2025 20:05:30 UTC] Tentando enviar email para: gustavofugulinsds@evergreenmkt.com.br
+[25-Apr-2025 20:05:30 UTC] Configuração SMTP:
+[25-Apr-2025 20:05:30 UTC] Host: smtp.hostgator.com.br
+[25-Apr-2025 20:05:30 UTC] Port: 587
+[25-Apr-2025 20:05:30 UTC] Username: amd@evergreenmkt.com.br
+[25-Apr-2025 20:05:30 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/plugins/enable-cors/src/Helpers/Headers.php on line 28
+[25-Apr-2025 20:05:30 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 381
+[25-Apr-2025 20:05:30 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 382
+[25-Apr-2025 20:05:30 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 383
+[25-Apr-2025 20:05:30 UTC] WordPress inicializado
+[25-Apr-2025 17:06:09 America/Fortaleza] PHP Warning:  Undefined array key "HTTP_X_FORWARDED_PROTO" in /home4/comu5801/evergreenmkt.com.br/wp-config.php on line 57
+[25-Apr-2025 17:06:09 America/Fortaleza] PHP Warning:  Undefined array key "HTTP_X_FORWARDED_PROTO" in /home4/comu5801/evergreenmkt.com.br/wp-config.php on line 57
+[25-Apr-2025 20:06:09 UTC] WordPress inicializado
+[25-Apr-2025 17:06:09 America/Fortaleza] PHP Warning:  Undefined array key "HTTP_X_FORWARDED_PROTO" in /home4/comu5801/evergreenmkt.com.br/wp-config.php on line 57
+[25-Apr-2025 20:06:09 UTC] === Início do processamento do formulário ===
+[25-Apr-2025 20:06:09 UTC] Dados recebidos: Array
+(
+    [nome] => TESTE
+    [email] => test@teste.com
+    [mensagem] => asdsandhn
+)
+
+[25-Apr-2025 20:06:09 UTC] Tentando enviar email para: gustavofugulinsds@evergreenmkt.com.br
+[25-Apr-2025 20:06:09 UTC] Configuração SMTP:
+[25-Apr-2025 20:06:09 UTC] Host: smtp.hostgator.com.br
+[25-Apr-2025 20:06:09 UTC] Port: 587
+[25-Apr-2025 20:06:09 UTC] Username: amd@evergreenmkt.com.br
+[25-Apr-2025 20:06:09 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/plugins/enable-cors/src/Helpers/Headers.php on line 28
+[25-Apr-2025 20:06:10 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 381
+[25-Apr-2025 20:06:10 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 382
+[25-Apr-2025 20:06:10 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 383
+[25-Apr-2025 20:06:10 UTC] WordPress inicializado
+[25-Apr-2025 17:06:15 America/Fortaleza] PHP Warning:  Undefined array key "HTTP_X_FORWARDED_PROTO" in /home4/comu5801/evergreenmkt.com.br/wp-config.php on line 57
+[25-Apr-2025 20:06:15 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/plugins/enable-cors/src/Helpers/Headers.php on line 28
+[25-Apr-2025 20:06:15 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 381
+[25-Apr-2025 20:06:15 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 382
+[25-Apr-2025 20:06:15 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 383
+[25-Apr-2025 20:06:15 UTC] WordPress inicializado
+[25-Apr-2025 17:08:16 America/Fortaleza] PHP Warning:  Undefined array key "HTTP_X_FORWARDED_PROTO" in /home4/comu5801/evergreenmkt.com.br/wp-config.php on line 57
+[25-Apr-2025 20:08:16 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/plugins/enable-cors/src/Helpers/Headers.php on line 28
+[25-Apr-2025 20:08:16 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 381
+[25-Apr-2025 20:08:16 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 382
+[25-Apr-2025 20:08:16 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home4/comu5801/evergreenmkt.com.br/wp-content/themes/hello-elementor/functions.php on line 383
+[25-Apr-2025 20:08:16 UTC] WordPress inicializado

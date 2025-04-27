@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { fadeInUp, staggerContainer } from '@/utils/animations'
+import Link from 'next/link'
 
 interface Question {
   id: number
@@ -84,6 +85,13 @@ export default function MaturidadeDigitalPage() {
   const [currentQuestion, setCurrentQuestion] = useState(0)
   const [answers, setAnswers] = useState<Record<number, number>>({})
   const [showResults, setShowResults] = useState(false)
+  const [results, setResults] = useState<Results>({
+    estrategia: 0,
+    processos: 0,
+    tecnologia: 0,
+    cultura: 0,
+    total: 0
+  })
 
   const handleAnswer = (value: number) => {
     setAnswers(prev => ({ ...prev, [questions[currentQuestion].id]: value }))
@@ -96,7 +104,7 @@ export default function MaturidadeDigitalPage() {
   }
 
   const calculateResults = () => {
-    const results: Results = {
+    const newResults: Results = {
       estrategia: 0,
       processos: 0,
       tecnologia: 0,
@@ -113,20 +121,21 @@ export default function MaturidadeDigitalPage() {
 
     questions.forEach(q => {
       const answer = answers[q.id] || 0
-      results[q.category] += answer
+      newResults[q.category] += answer
       totalQuestions[q.category]++
     })
 
     // Calcular médias
-    Object.keys(results).forEach(key => {
+    Object.keys(newResults).forEach(key => {
       if (key !== 'total') {
-        results[key as keyof typeof results] = 
-          (results[key as keyof typeof results] / totalQuestions[key as keyof typeof totalQuestions]) * 25
+        newResults[key as keyof typeof newResults] = 
+          (newResults[key as keyof typeof newResults] / totalQuestions[key as keyof typeof totalQuestions]) * 25
       }
     })
 
-    results.total = (Object.values(results).reduce((a, b) => a + b, 0) - results.total) / 4
+    newResults.total = (Object.values(newResults).reduce((a, b) => a + b, 0) - newResults.total) / 4
 
+    setResults(newResults)
     setShowResults(true)
   }
 
@@ -239,9 +248,11 @@ export default function MaturidadeDigitalPage() {
                 </div>
 
                 <div className="text-center">
-                  <button className="btn-primary">
-                    Receber Relatório Detalhado
-                  </button>
+                  <Link href="/contato">
+                    <button className="btn-primary">
+                      Quero adubar minha empresa
+                    </button>
+                  </Link>
                   <p className="mt-4 text-sm text-gray-600">
                     Agende uma consultoria gratuita para discutir seu resultado em detalhes
                   </p>

@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { fadeInUp, staggerContainer } from '@/utils/animations'
+import Link from 'next/link'
 
 interface ROIData {
   investimento: number
@@ -143,30 +144,48 @@ export default function CalculadoraROIPage() {
             </form>
 
             {showResults && (
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                className="mt-12 grid md:grid-cols-3 gap-6"
-              >
-                <div className="bg-gradient-to-br from-blue-500/20 to-cyan-500/20 rounded-xl p-6 text-center">
-                  <h3 className="text-lg font-medium text-gray-700 mb-2">ROI</h3>
-                  <p className="text-3xl font-bold text-eg-green">{results.roi}%</p>
-                </div>
+              <>
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  className="mt-12 grid md:grid-cols-3 gap-6"
+                >
+                  <div className="bg-gradient-to-br from-blue-500/20 to-cyan-500/20 rounded-xl p-6 text-center">
+                    <h3 className="text-lg font-medium text-gray-700 mb-2">ROI</h3>
+                    <p className="text-3xl font-bold text-eg-green">{results.roi}%</p>
+                  </div>
 
-                <div className="bg-gradient-to-br from-green-500/20 to-teal-500/20 rounded-xl p-6 text-center">
-                  <h3 className="text-lg font-medium text-gray-700 mb-2">Lucro Total</h3>
-                  <p className="text-3xl font-bold text-eg-green">
-                    R$ {results.lucroTotal}
-                  </p>
-                </div>
+                  <div className="bg-gradient-to-br from-green-500/20 to-teal-500/20 rounded-xl p-6 text-center">
+                    <h3 className="text-lg font-medium text-gray-700 mb-2">Lucro Total</h3>
+                    <p className="text-3xl font-bold text-eg-green">
+                      R$ {results.lucroTotal}
+                    </p>
+                  </div>
 
-                <div className="bg-gradient-to-br from-purple-500/20 to-pink-500/20 rounded-xl p-6 text-center">
-                  <h3 className="text-lg font-medium text-gray-700 mb-2">Payback</h3>
-                  <p className="text-3xl font-bold text-eg-green">
-                    {results.paybackMeses} meses
+                  <div className="bg-gradient-to-br from-purple-500/20 to-pink-500/20 rounded-xl p-6 text-center">
+                    <h3 className="text-lg font-medium text-gray-700 mb-2">Payback</h3>
+                    <p className="text-3xl font-bold text-eg-green">
+                      {results.paybackMeses} meses
+                    </p>
+                  </div>
+                </motion.div>
+
+                <motion.div 
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.3 }}
+                  className="mt-12 text-center"
+                >
+                  <Link href="/contato">
+                    <button className="btn-primary">
+                      Quero maximizar meu ROI
+                    </button>
+                  </Link>
+                  <p className="mt-4 text-sm text-gray-600">
+                    Agende uma consultoria gratuita para descobrir como podemos potencializar seus resultados
                   </p>
-                </div>
-              </motion.div>
+                </motion.div>
+              </>
             )}
           </motion.div>
 

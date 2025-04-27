@@ -106,4 +106,42 @@
   .bg-gradient-subtle {
     @apply bg-gradient-to-br from-white to-gray-50;
   }
+
+  /* Estilos para o scrollbar */
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  /* Animações para os cards */
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  .hover-pulse:hover {
+    animation: pulse 2s infinite;
+  }
+
+  /* Efeito de gradiente nos cards */
+  .card-gradient {
+    background: linear-gradient(135deg, #ffffff 0%, #f0fdf4 100%);
+    transition: all 0.3s ease;
+  }
+
+  .card-gradient:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  }
 } 
