@@ -6,24 +6,41 @@ import { fadeInUp, staggerContainer } from '@/utils/animations'
 import ParticlesBackground from '@/components/interactive/ParticlesBackground'
 import { useRef } from 'react'
 import { useScroll, useTransform } from 'framer-motion'
+import { 
+  FaChartLine, 
+  FaMoneyBillWave, 
+  FaRobot, 
+  FaFileContract, 
+  FaFileAlt, 
+  FaWhatsapp, 
+  FaFileInvoice, 
+  FaChartBar,
+  FaBriefcase,
+  FaBalanceScale,
+  FaComments,
+  FaChartPie,
+  FaClipboardList,
+  FaBrain,
+  FaChartArea
+} from 'react-icons/fa'
 
 const financeServices = [
   {
     title: 'Evergreen DRE',
     desc: 'Relatórios financeiros claros e visuais',
-    icon: '📈',
+    icon: <FaChartLine className="text-3xl" />,
     color: 'border-emerald-400',
   },
   {
     title: 'Evergreen Flow',
     desc: 'Fluxo de caixa previsto para 90 dias',
-    icon: '💸',
+    icon: <FaMoneyBillWave className="text-3xl" />,
     color: 'border-emerald-400',
   },
   {
     title: 'Evergreen CobrAI',
     desc: 'Cobrança automática via IA (Whats, SMS, Email)',
-    icon: '🤖',
+    icon: <FaRobot className="text-3xl" />,
     color: 'border-emerald-400',
   },
 ]
@@ -32,13 +49,13 @@ const legalServices = [
   {
     title: 'Evergreen LegalBot',
     desc: 'Geração de contratos automatizados com IA',
-    icon: '📃',
+    icon: <FaFileContract className="text-3xl" />,
     color: 'border-yellow-400',
   },
   {
     title: 'Evergreen DocFast',
     desc: 'Registro de empresa, marca e documentos expressos',
-    icon: '📝',
+    icon: <FaFileAlt className="text-3xl" />,
     color: 'border-yellow-400',
   },
 ]
@@ -47,13 +64,13 @@ const salesServices = [
   {
     title: 'Evergreen WhatsBot',
     desc: 'Atendimento automático 24h via WhatsApp',
-    icon: '💬',
+    icon: <FaWhatsapp className="text-3xl" />,
     color: 'border-blue-400',
   },
   {
     title: 'Evergreen PitchBuilder',
     desc: 'Scripts de venda prontos em 24h com IA',
-    icon: '🧾',
+    icon: <FaFileInvoice className="text-3xl" />,
     color: 'border-blue-400',
   },
 ]
@@ -62,7 +79,7 @@ const biServices = [
   {
     title: 'Evergreen BI Starter',
     desc: 'Dashboard de vendas, gastos e conversão visualizados',
-    icon: '📊',
+    icon: <FaChartBar className="text-3xl" />,
     color: 'border-red-400',
   },
 ]
@@ -162,25 +179,25 @@ export default function EGOSPage() {
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div className="glass-card p-6 bg-emerald-950/30">
-                  <div className="text-3xl mb-4">💼</div>
+                  <div className="text-3xl mb-4 text-emerald-400"><FaBriefcase /></div>
                   <h3 className="text-xl font-bold text-emerald-500 mb-2">
                     Operação Financeira e Cobrança
                   </h3>
                 </div>
                 <div className="glass-card p-6 bg-emerald-950/30">
-                  <div className="text-3xl mb-4">⚖️</div>
+                  <div className="text-3xl mb-4 text-emerald-400"><FaBalanceScale /></div>
                   <h3 className="text-xl font-bold text-emerald-500 mb-2">
                     Jurídico e Contratos
                   </h3>
                 </div>
                 <div className="glass-card p-6 bg-emerald-950/30">
-                  <div className="text-3xl mb-4">💬</div>
+                  <div className="text-3xl mb-4 text-emerald-400"><FaComments /></div>
                   <h3 className="text-xl font-bold text-emerald-500 mb-2">
                     Comercial e Atendimento
                   </h3>
                 </div>
                 <div className="glass-card p-6 bg-emerald-950/30">
-                  <div className="text-3xl mb-4">📊</div>
+                  <div className="text-3xl mb-4 text-emerald-400"><FaChartPie /></div>
                   <h3 className="text-xl font-bold text-emerald-500 mb-2">
                     BI e Relatórios
                   </h3>
@@ -200,22 +217,22 @@ export default function EGOSPage() {
             </motion.h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               <motion.div variants={fadeInUp} className="glass-card p-8 bg-emerald-900/30 text-center flex flex-col items-center">
-                <span className="text-3xl mb-2">📄</span>
+                <span className="text-3xl mb-2 text-emerald-400"><FaClipboardList /></span>
                 <h3 className="font-bold mb-2 text-emerald-400">1. Onboarding Digital</h3>
                 <p className="text-[#E6E3B1] text-sm">Preencha um formulário rápido e pronto. Sem reuniões chatas.</p>
               </motion.div>
               <motion.div variants={fadeInUp} className="glass-card p-8 bg-emerald-900/30 text-center flex flex-col items-center">
-                <span className="text-3xl mb-2">🤖</span>
+                <span className="text-3xl mb-2 text-emerald-400"><FaRobot /></span>
                 <h3 className="font-bold mb-2 text-emerald-400">2. Automatizamos com IA</h3>
                 <p className="text-[#E6E3B1] text-sm">Configuramos agentes para executar tarefas recorrentes.</p>
               </motion.div>
               <motion.div variants={fadeInUp} className="glass-card p-8 bg-emerald-900/30 text-center flex flex-col items-center">
-                <span className="text-3xl mb-2">🧠</span>
+                <span className="text-3xl mb-2 text-emerald-400"><FaBrain /></span>
                 <h3 className="font-bold mb-2 text-emerald-400">3. Operação Playbook</h3>
                 <p className="text-[#E6E3B1] text-sm">Aplicamos processos padrão baseados em frameworks EG.</p>
               </motion.div>
               <motion.div variants={fadeInUp} className="glass-card p-8 bg-emerald-900/30 text-center flex flex-col items-center">
-                <span className="text-3xl mb-2">📊</span>
+                <span className="text-3xl mb-2 text-emerald-400"><FaChartArea /></span>
                 <h3 className="font-bold mb-2 text-emerald-400">4. Relatórios & Insights</h3>
                 <p className="text-[#E6E3B1] text-sm">Você recebe dashboards e acompanhamentos para crescer com inteligência.</p>
               </motion.div>

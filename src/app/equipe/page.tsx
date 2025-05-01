@@ -41,11 +41,11 @@ const founderCards = [
 
 export default function EquipePage() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-eg-offwhite to-white">
+    <div className="min-h-screen bg-[#09231B]">
       {/* Hero Section com Gradiente e Blur */}
       <div className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-emerald-500/10 to-emerald-600/10 pointer-events-none" />
-        <div className="absolute inset-y-0 -left-[50%] w-[100%] bg-emerald-100/20 rotate-12 transform origin-top-right" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#3AC97B]/10 to-[#3AC97B]/20 pointer-events-none" />
+        <div className="absolute inset-y-0 -left-[50%] w-[100%] bg-[#3AC97B]/10 rotate-12 transform origin-top-right" />
         
         <section className="relative pt-24 pb-20">
           <motion.div
@@ -58,17 +58,17 @@ export default function EquipePage() {
               variants={fadeInUp}
               className="max-w-4xl mx-auto text-center"
             >
-              <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-emerald-600 to-emerald-500 bg-clip-text text-transparent">
+              <h1 className="text-5xl md:text-6xl font-bold mb-6 text-[#FFF4C7]">
                 Pessoas por trás da Evergreen
               </h1>
-              <p className="text-2xl font-bold text-gray-800 mb-6">
+              <p className="text-2xl font-bold text-[#FFF4C7] mb-6">
                 Mais do que fundadores. Somos executores.
               </p>
-              <p className="text-xl text-gray-600 leading-relaxed mb-8">
+              <p className="text-xl text-[#FFF4C7]/80 leading-relaxed mb-8">
                 Criamos a EG para construir o tipo de empresa que queríamos contratar.<br />
                 Combinamos tecnologia, marketing e operação pra transformar ambição em execução.
               </p>
-              <blockquote className="text-xl italic text-gray-700 bg-white/50 backdrop-blur-sm p-6 rounded-2xl shadow-sm border border-emerald-100">
+              <blockquote className="text-xl italic text-[#FFF4C7] bg-[#09231B]/50 backdrop-blur-sm p-6 rounded-2xl shadow-sm border border-[#3AC97B]/20">
                 "Visão sem ação é só um sonho. A gente acordou pra fazer acontecer."
               </blockquote>
             </motion.div>
@@ -91,12 +91,12 @@ export default function EquipePage() {
                 key={founder.nome}
                 variants={fadeInUp}
                 whileHover={{ y: -5 }}
-                className="bg-white rounded-2xl shadow-xl overflow-hidden border border-emerald-100/50"
+                className="bg-[#09231B] rounded-2xl shadow-xl overflow-hidden border border-[#3AC97B]/20"
               >
                 {/* Header do Card */}
-                <div className="bg-gradient-to-r from-emerald-500 to-emerald-600 p-8">
+                <div className="bg-gradient-to-r from-[#3AC97B] to-[#3AC97B]/80 p-8">
                   <div className="flex items-start gap-6">
-                    <div className="relative w-24 h-24 rounded-xl overflow-hidden bg-white shadow-lg">
+                    <div className="relative w-24 h-24 rounded-xl overflow-hidden bg-[#09231B] shadow-lg">
                       <Image
                         src={founder.foto}
                         alt={founder.nome}
@@ -109,52 +109,52 @@ export default function EquipePage() {
                           e.currentTarget.style.display = 'none'
                         }}
                       />
-                      <span className="absolute inset-0 flex items-center justify-center text-xl font-bold text-emerald-600 bg-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      <span className="absolute inset-0 flex items-center justify-center text-xl font-bold text-[#3AC97B] bg-[#09231B] opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         {founder.nome.split(' ').map(n => n[0]).join('')}
                       </span>
                     </div>
                     <div>
                       <div className="flex flex-col mb-1">
-                        <h3 className="text-2xl font-bold text-white leading-tight mb-1">
+                        <h3 className="text-2xl font-bold text-[#FFF4C7] leading-tight mb-1">
                           {founder.nome}
                         </h3>
-                        <p className="text-emerald-50 font-medium text-lg">
+                        <p className="text-[#FFF4C7]/80 font-medium text-lg">
                           {founder.cargo}
                         </p>
                       </div>
                     </div>
                   </div>
-                  <p className="text-lg font-medium text-white mt-6 italic">
+                  <p className="text-lg font-medium text-[#FFF4C7] mt-6 italic">
                     {founder.tagline}
                   </p>
                 </div>
 
                 {/* Conteúdo do Card */}
                 <div className="p-8">
-                  <p className="text-gray-600 leading-relaxed mb-8">
+                  <p className="text-[#FFF4C7]/80 leading-relaxed mb-8">
                     {founder.bio}
                   </p>
 
                   <div className="space-y-6">
                     <div>
-                      <h4 className="text-lg font-bold mb-4 flex items-center gap-2 text-emerald-700">
-                        <Cog6ToothIcon className="h-6 w-6 text-emerald-500" /> Skills
+                      <h4 className="text-lg font-bold mb-4 flex items-center gap-2 text-[#3AC97B]">
+                        <Cog6ToothIcon className="h-6 w-6 text-[#3AC97B]" /> Skills
                       </h4>
                       <ul className="grid grid-cols-2 gap-3">
                         {founder.skills.map((skill, idx) => (
-                          <li key={idx} className="flex items-center gap-2 text-gray-600">
-                            <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 flex-shrink-0" />
+                          <li key={idx} className="flex items-center gap-2 text-[#FFF4C7]/80">
+                            <span className="w-1.5 h-1.5 rounded-full bg-[#3AC97B] flex-shrink-0" />
                             {skill}
                           </li>
                         ))}
                       </ul>
                     </div>
 
-                    <div className="pt-6 border-t border-gray-100">
-                      <h4 className="text-lg font-bold mb-3 flex items-center gap-2 text-emerald-700">
-                        <ChatBubbleLeftRightIcon className="h-6 w-6 text-emerald-500" /> Frase de guerra
+                    <div className="pt-6 border-t border-[#3AC97B]/20">
+                      <h4 className="text-lg font-bold mb-3 flex items-center gap-2 text-[#3AC97B]">
+                        <ChatBubbleLeftRightIcon className="h-6 w-6 text-[#3AC97B]" /> Frase de guerra
                       </h4>
-                      <p className="text-gray-600 italic bg-emerald-50/50 p-4 rounded-xl">
+                      <p className="text-[#FFF4C7] italic bg-[#09231B]/50 p-4 rounded-xl border border-[#3AC97B]/20">
                         "{founder.frase}"
                       </p>
                     </div>
@@ -167,7 +167,7 @@ export default function EquipePage() {
       </section>
 
       {/* Culture Section com Visual Moderno */}
-      <section className="py-20 relative bg-gradient-to-b from-white to-emerald-50/30">
+      <section className="py-20 relative">
         <div className="container mx-auto px-4">
           <motion.div
             variants={staggerContainer}
@@ -177,22 +177,22 @@ export default function EquipePage() {
             className="max-w-4xl mx-auto"
           >
             <motion.div variants={fadeInUp} className="text-center mb-16">
-              <h2 className="text-4xl font-bold mb-6 bg-gradient-to-r from-emerald-600 to-emerald-500 bg-clip-text text-transparent inline-flex items-center gap-3">
-                <MagnifyingGlassIcon className="h-7 w-7 text-emerald-500" /> Nossa Cultura
+              <h2 className="text-4xl font-bold mb-6 text-[#FFF4C7] inline-flex items-center gap-3">
+                <MagnifyingGlassIcon className="h-7 w-7 text-[#3AC97B]" /> Nossa Cultura
               </h2>
-              <p className="text-2xl font-bold text-gray-800 mb-4">
+              <p className="text-2xl font-bold text-[#FFF4C7] mb-4">
                 Aqui, ideias valem. Mas execução vale mais.
               </p>
-              <p className="text-xl text-gray-600 leading-relaxed">
+              <p className="text-xl text-[#FFF4C7]/80 leading-relaxed">
                 Valorizamos quem pensa grande, fala pouco e entrega muito.<br />
                 A gente acredita em autonomia com responsabilidade, inovação com propósito, e crescimento com consistência.
               </p>
             </motion.div>
 
             <motion.div variants={fadeInUp} className="grid md:grid-cols-2 gap-8">
-              <div className="bg-white rounded-2xl p-8 shadow-lg border border-emerald-100">
-                <h3 className="text-xl font-bold mb-6 flex items-center gap-2 text-emerald-700">
-                  <ArrowTrendingUpIcon className="h-6 w-6 text-emerald-500" /> Temos fome de:
+              <div className="bg-[#09231B] rounded-2xl p-8 shadow-lg border border-[#3AC97B]/20">
+                <h3 className="text-xl font-bold mb-6 flex items-center gap-2 text-[#3AC97B]">
+                  <ArrowTrendingUpIcon className="h-6 w-6 text-[#3AC97B]" /> Temos fome de:
                 </h3>
                 <ul className="space-y-4">
                   {[
@@ -200,17 +200,17 @@ export default function EquipePage() {
                     'Criar ferramentas que escalam',
                     'Ver clientes crescendo junto',
                   ].map((item, idx) => (
-                    <li key={idx} className="flex items-start gap-3 text-gray-600">
-                      <span className="w-2 h-2 rounded-full bg-emerald-500 mt-2 flex-shrink-0" />
+                    <li key={idx} className="flex items-start gap-3 text-[#FFF4C7]/80">
+                      <span className="w-2 h-2 rounded-full bg-[#3AC97B] mt-2 flex-shrink-0" />
                       <span className="text-lg">{item}</span>
                     </li>
                   ))}
                 </ul>
               </div>
 
-              <div className="bg-white rounded-2xl p-8 shadow-lg border border-emerald-100">
-                <h3 className="text-xl font-bold mb-6 flex items-center gap-2 text-emerald-700">
-                  <NoSymbolIcon className="h-6 w-6 text-emerald-500" /> Não temos tempo pra:
+              <div className="bg-[#09231B] rounded-2xl p-8 shadow-lg border border-[#3AC97B]/20">
+                <h3 className="text-xl font-bold mb-6 flex items-center gap-2 text-[#3AC97B]">
+                  <NoSymbolIcon className="h-6 w-6 text-[#3AC97B]" /> Não temos tempo pra:
                 </h3>
                 <ul className="space-y-4">
                   {[
@@ -218,8 +218,8 @@ export default function EquipePage() {
                     'Complexidade desnecessária',
                     'Marketing vazio',
                   ].map((item, idx) => (
-                    <li key={idx} className="flex items-start gap-3 text-gray-600">
-                      <span className="w-2 h-2 rounded-full bg-emerald-500 mt-2 flex-shrink-0" />
+                    <li key={idx} className="flex items-start gap-3 text-[#FFF4C7]/80">
+                      <span className="w-2 h-2 rounded-full bg-[#3AC97B] mt-2 flex-shrink-0" />
                       <span className="text-lg">{item}</span>
                     </li>
                   ))}
@@ -232,7 +232,7 @@ export default function EquipePage() {
 
       {/* Call to Action com Design Premium */}
       <section className="py-20 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-emerald-50/50 to-emerald-100/30" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#09231B] to-[#09231B]/90" />
         <div className="container mx-auto px-4 relative">
           <motion.div
             variants={staggerContainer}
@@ -243,12 +243,12 @@ export default function EquipePage() {
           >
             <motion.div 
               variants={fadeInUp}
-              className="bg-white rounded-2xl p-12 shadow-xl border border-emerald-100"
+              className="bg-[#09231B] rounded-2xl p-12 shadow-xl border border-[#3AC97B]/20"
             >
-              <h2 className="text-4xl font-bold mb-6 bg-gradient-to-r from-emerald-600 to-emerald-500 bg-clip-text text-transparent flex items-center justify-center gap-3">
-                <GlobeAltIcon className="h-7 w-7 text-emerald-500" /> Faça parte desse florestamento
+              <h2 className="text-4xl font-bold mb-6 text-[#FFF4C7] flex items-center justify-center gap-3">
+                <GlobeAltIcon className="h-7 w-7 text-[#3AC97B]" /> Faça parte desse florestamento
               </h2>
-              <p className="text-xl text-gray-600 leading-relaxed mb-8">
+              <p className="text-xl text-[#FFF4C7]/80 leading-relaxed mb-8">
                 Se você está lendo isso, ainda dá tempo de entrar na base.<br />
                 Estamos escolhendo os parceiros certos para crescer junto.<br />
                 Aqui, cada cliente é co-criador da floresta que estamos construindo.
@@ -256,13 +256,13 @@ export default function EquipePage() {
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link
                   href="/contato"
-                  className="inline-flex items-center px-8 py-4 text-lg font-medium rounded-xl text-white bg-emerald-500 hover:bg-emerald-600 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+                  className="inline-flex items-center px-8 py-4 text-lg font-medium rounded-xl text-[#09231B] bg-[#3AC97B] hover:bg-[#3AC97B]/90 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
                 >
                   Quero ser parte da floresta
                 </Link>
                 <Link
                   href="/cases"
-                  className="inline-flex items-center px-8 py-4 text-lg font-medium rounded-xl text-emerald-700 bg-emerald-50 hover:bg-emerald-100 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+                  className="inline-flex items-center px-8 py-4 text-lg font-medium rounded-xl text-[#FFF4C7] bg-[#09231B] hover:bg-[#09231B]/80 border border-[#3AC97B] transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
                 >
                   Ver Casos
                 </Link>

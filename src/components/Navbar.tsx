@@ -61,6 +61,18 @@ export default function Navbar() {
               Soluções
             </Link>
 
+            {/* Link de Benchmark */}
+            <Link
+              href="/benchmark"
+              className={`text-sm font-medium transition-colors ${
+                isActive('/benchmark')
+                  ? 'text-emerald-500'
+                  : 'text-[#E6E3B1] hover:text-emerald-500'
+              }`}
+            >
+              Benchmark
+            </Link>
+
             {/* Recursos Dropdown */}
             <div className="relative group">
               <button className="inline-flex items-center text-sm font-medium text-[#E6E3B1] hover:text-emerald-500 transition-colors">
@@ -72,9 +84,6 @@ export default function Navbar() {
               <div className="absolute left-0 mt-2 w-64 rounded-xl shadow-lg py-2 bg-[#0D221B] ring-1 ring-black ring-opacity-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
                 <Link href="/newsletter" className="block px-4 py-2.5 text-sm text-[#E6E3B1] hover:bg-[#1a3d30] hover:text-emerald-500">
                   Newsletter
-                </Link>
-                <Link href="/cases" className="block px-4 py-2.5 text-sm text-[#E6E3B1] hover:bg-[#1a3d30] hover:text-emerald-500">
-                  Cases
                 </Link>
                 <Link href="/ferramentas" className="block px-4 py-2.5 text-sm text-[#E6E3B1] hover:bg-[#1a3d30] hover:text-emerald-500">
                   Recursos Gratuitos
@@ -103,7 +112,7 @@ export default function Navbar() {
                 <Link href="/eg-lab" className="block px-4 py-2.5 text-sm text-[#E6E3B1] hover:bg-[#1a3d30] hover:text-emerald-500">
                   EG Lab
                 </Link>
-                <Link href="/eg-lab" className="block px-4 py-2.5 text-sm text-[#E6E3B1] hover:bg-[#1a3d30] hover:text-emerald-500">
+                <Link href="/eg-os" className="block px-4 py-2.5 text-sm text-[#E6E3B1] hover:bg-[#1a3d30] hover:text-emerald-500">
                   EG Os
                 </Link>
                 <Link href="/holding" className="block px-4 py-2.5 text-sm text-[#E6E3B1] hover:bg-[#1a3d30] hover:text-emerald-500">
@@ -203,7 +212,7 @@ export default function Navbar() {
             Newsletter
           </Link>
           <Link
-            href="/diagnostico"
+            href="/contato"
             className="block px-3 py-2 rounded-md text-base font-medium text-emerald-500 hover:text-emerald-600"
           >
             Agendar Diagnóstico

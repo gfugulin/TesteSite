@@ -1,8 +1,9 @@
 {
-  "/_not-found/page": "app/_not-found/page.js",
-  "/holding/page": "app/holding/page.js",
-  "/investidores/page": "app/investidores/page.js",
+  "/equipe/page": "app/equipe/page.js",
+  "/eg-tech/page": "app/eg-tech/page.js",
+  "/page": "app/page.js",
   "/niveis-de-cliente/page": "app/niveis-de-cliente/page.js",
-  "/contato/page": "app/contato/page.js",
-  "/page": "app/page.js"
+  "/benchmark/page": "app/benchmark/page.js",
+  "/autoridade/page": "app/autoridade/page.js",
+  "/blog/page": "app/blog/page.js"
 }

@@ -26,8 +26,8 @@ Criar um site que seja:
 | /equipe                    | Evergreen People         | Cultura e talentos | ✅
 | /autoridade                | Evergreen Authority      | Certificações e prêmios | ✅
 | /investidores              | Evergreen Capital        | Captação e equity deals |
-| /holding                   | Evergreen Group          | Visão corporativa |
-| /niveis-de-clientes        | Evergreen Journey        | Cultura de clientes |
+| /holding                   | Evergreen Group          | Visão corporativa |✅
+| /niveis-de-clientes        | Evergreen Journey        | Cultura de clientes | ✅
 | /legal                     | Evergreen Legal          | Termos, cookies, etc | ✅
 
 ---

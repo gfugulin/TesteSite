@@ -135,7 +135,7 @@ Abraço,
   }
 
   return (
-    <main className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 py-20">
+    <main className="min-h-screen bg-[#09231B] py-20">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -144,17 +144,17 @@ Abraço,
         >
           {/* Hero Section */}
           <div className="text-center mb-16">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-[#3AC97B]">
               Cold Email Builder EG
             </h1>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-[#FFF4C7]/80 max-w-3xl mx-auto">
               Gere emails personalizados de alta conversão em segundos.<br />
               Escolha o estilo que mais combina com seu lead.
             </p>
           </div>
 
           {/* Form Section */}
-          <div className="bg-white rounded-2xl shadow-xl p-8 mb-12">
+          <div className="bg-[#09231B] rounded-2xl border border-[#3AC97B]/20 p-8 mb-12">
             <form onSubmit={handleSubmit} className="space-y-6">
               {/* Estilo do Email */}
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
@@ -163,14 +163,14 @@ Abraço,
                     key={estilo.id}
                     className={`cursor-pointer p-4 rounded-xl border-2 transition-all ${
                       formData.estilo === estilo.id
-                        ? 'border-blue-500 bg-blue-50'
-                        : 'border-gray-200 hover:border-blue-200'
+                        ? 'border-[#3AC97B] bg-[#3AC97B]/10'
+                        : 'border-[#3AC97B]/20 hover:border-[#3AC97B]/40'
                     }`}
                     onClick={() => setFormData(prev => ({ ...prev, estilo: estilo.id as EmailForm['estilo'] }))}
                   >
                     <div className="text-2xl mb-2">{estilo.icone}</div>
-                    <h3 className="font-bold mb-1">{estilo.nome}</h3>
-                    <p className="text-sm text-gray-600">{estilo.descricao}</p>
+                    <h3 className="font-bold mb-1 text-[#FFF4C7]">{estilo.nome}</h3>
+                    <p className="text-sm text-[#FFF4C7]/80">{estilo.descricao}</p>
                   </div>
                 ))}
               </div>
@@ -178,7 +178,7 @@ Abraço,
               {/* Campos base */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
+                  <label className="block text-sm font-medium text-[#FFF4C7] mb-2">
                     Produto ou serviço
                   </label>
                   <input
@@ -186,14 +186,14 @@ Abraço,
                     name="produto"
                     value={formData.produto}
                     onChange={handleChange}
-                    className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    className="w-full px-4 py-2 rounded-lg bg-[#09231B] border border-[#3AC97B]/20 text-[#FFF4C7] focus:outline-none focus:ring-2 focus:ring-[#3AC97B] focus:border-transparent"
                     placeholder="Ex: Software de automação"
                     required
                   />
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
+                  <label className="block text-sm font-medium text-[#FFF4C7] mb-2">
                     Benefício principal
                   </label>
                   <input
@@ -201,14 +201,14 @@ Abraço,
                     name="beneficio"
                     value={formData.beneficio}
                     onChange={handleChange}
-                    className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    className="w-full px-4 py-2 rounded-lg bg-[#09231B] border border-[#3AC97B]/20 text-[#FFF4C7] focus:outline-none focus:ring-2 focus:ring-[#3AC97B] focus:border-transparent"
                     placeholder="Ex: aumentar vendas em 3x"
                     required
                   />
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
+                  <label className="block text-sm font-medium text-[#FFF4C7] mb-2">
                     Perfil do cliente ideal
                   </label>
                   <input
@@ -216,14 +216,14 @@ Abraço,
                     name="perfilCliente"
                     value={formData.perfilCliente}
                     onChange={handleChange}
-                    className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    className="w-full px-4 py-2 rounded-lg bg-[#09231B] border border-[#3AC97B]/20 text-[#FFF4C7] focus:outline-none focus:ring-2 focus:ring-[#3AC97B] focus:border-transparent"
                     placeholder="Ex: empresas B2B de tecnologia"
                     required
                   />
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
+                  <label className="block text-sm font-medium text-[#FFF4C7] mb-2">
                     Call to Action (CTA)
                   </label>
                   <input
@@ -231,7 +231,7 @@ Abraço,
                     name="cta"
                     value={formData.cta}
                     onChange={handleChange}
-                    className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    className="w-full px-4 py-2 rounded-lg bg-[#09231B] border border-[#3AC97B]/20 text-[#FFF4C7] focus:outline-none focus:ring-2 focus:ring-[#3AC97B] focus:border-transparent"
                     placeholder="Ex: uma demonstração de 30 minutos"
                     required
                   />
@@ -240,7 +240,7 @@ Abraço,
                 {/* Campos condicionais baseados no estilo */}
                 {formData.estilo === 'dor' && (
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
+                    <label className="block text-sm font-medium text-[#FFF4C7] mb-2">
                       Resultado negativo
                     </label>
                     <input
@@ -248,16 +248,15 @@ Abraço,
                       name="resultadoNegativo"
                       value={formData.resultadoNegativo}
                       onChange={handleChange}
-                      className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                      placeholder="Ex: perda de vendas, tempo desperdiçado"
-                      required
+                      className="w-full px-4 py-2 rounded-lg bg-[#09231B] border border-[#3AC97B]/20 text-[#FFF4C7] focus:outline-none focus:ring-2 focus:ring-[#3AC97B] focus:border-transparent"
+                      placeholder="Ex: perda de 30% em vendas"
                     />
                   </div>
                 )}
 
-                {(formData.estilo === 'curiosidade' || formData.estilo === 'desafio') && (
+                {formData.estilo === 'curiosidade' && (
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
+                    <label className="block text-sm font-medium text-[#FFF4C7] mb-2">
                       Resultado positivo
                     </label>
                     <input
@@ -265,71 +264,102 @@ Abraço,
                       name="resultadoPositivo"
                       value={formData.resultadoPositivo}
                       onChange={handleChange}
-                      className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                      placeholder="Ex: dobrando seu faturamento"
-                      required
+                      className="w-full px-4 py-2 rounded-lg bg-[#09231B] border border-[#3AC97B]/20 text-[#FFF4C7] focus:outline-none focus:ring-2 focus:ring-[#3AC97B] focus:border-transparent"
+                      placeholder="Ex: dobrando o faturamento"
                     />
                   </div>
                 )}
 
                 {formData.estilo === 'desafio' && (
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
-                      Tempo de implementação
-                    </label>
-                    <input
-                      type="text"
-                      name="tempoImplementacao"
-                      value={formData.tempoImplementacao}
-                      onChange={handleChange}
-                      className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                      placeholder="Ex: 30 dias"
-                      required
-                    />
-                  </div>
+                  <>
+                    <div>
+                      <label className="block text-sm font-medium text-[#FFF4C7] mb-2">
+                        Resultado positivo
+                      </label>
+                      <input
+                        type="text"
+                        name="resultadoPositivo"
+                        value={formData.resultadoPositivo}
+                        onChange={handleChange}
+                        className="w-full px-4 py-2 rounded-lg bg-[#09231B] border border-[#3AC97B]/20 text-[#FFF4C7] focus:outline-none focus:ring-2 focus:ring-[#3AC97B] focus:border-transparent"
+                        placeholder="Ex: crescer 10x mais rápido"
+                      />
+                    </div>
+                    <div>
+                      <label className="block text-sm font-medium text-[#FFF4C7] mb-2">
+                        Tempo de implementação
+                      </label>
+                      <input
+                        type="text"
+                        name="tempoImplementacao"
+                        value={formData.tempoImplementacao}
+                        onChange={handleChange}
+                        className="w-full px-4 py-2 rounded-lg bg-[#09231B] border border-[#3AC97B]/20 text-[#FFF4C7] focus:outline-none focus:ring-2 focus:ring-[#3AC97B] focus:border-transparent"
+                        placeholder="Ex: 2 semanas"
+                      />
+                    </div>
+                  </>
                 )}
               </div>
 
-              <div className="text-center mt-8">
+              <div className="text-center">
                 <button
                   type="submit"
-                  className="bg-blue-500 text-white px-8 py-3 rounded-xl hover:bg-blue-600 transition-colors"
+                  className="inline-block bg-[#3AC97B] text-[#09231B] px-8 py-3 rounded-xl hover:bg-[#3AC97B]/90 transition-colors font-medium"
                 >
                   Gerar Email
                 </button>
               </div>
             </form>
+
+            {generatedEmail && (
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                className="mt-12"
+              >
+                <div className="flex justify-between items-center mb-4">
+                  <h3 className="text-xl font-bold text-[#FFF4C7]">Email Gerado</h3>
+                  <div className="flex gap-2">
+                    <button
+                      onClick={generateEmail}
+                      className="p-2 rounded-lg bg-[#09231B] border border-[#3AC97B]/20 text-[#3AC97B] hover:bg-[#3AC97B]/10 transition-colors"
+                    >
+                      <FiRefreshCw className="w-5 h-5" />
+                    </button>
+                    <button
+                      onClick={copyToClipboard}
+                      className="p-2 rounded-lg bg-[#09231B] border border-[#3AC97B]/20 text-[#3AC97B] hover:bg-[#3AC97B]/10 transition-colors"
+                    >
+                      <FiCopy className="w-5 h-5" />
+                    </button>
+                  </div>
+                </div>
+                <div className="bg-[#09231B] border border-[#3AC97B]/20 rounded-xl p-6">
+                  <pre className="whitespace-pre-wrap font-mono text-[#FFF4C7]/90">
+                    {generatedEmail}
+                  </pre>
+                </div>
+                {copied && (
+                  <p className="text-[#3AC97B] text-sm mt-2">
+                    ✓ Copiado para a área de transferência
+                  </p>
+                )}
+              </motion.div>
+            )}
           </div>
 
-          {/* Generated Email Section */}
-          {generatedEmail && (
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              className="bg-white rounded-2xl shadow-xl p-8"
-            >
-              <h2 className="text-2xl font-bold mb-6">Seu Cold Email EG</h2>
-              <div className="bg-gray-50 p-6 rounded-xl font-mono text-sm whitespace-pre-wrap mb-6">
-                {generatedEmail}
-              </div>
-              <div className="flex justify-center gap-4">
-                <button
-                  onClick={copyToClipboard}
-                  className="flex items-center gap-2 bg-green-500 text-white px-6 py-3 rounded-xl hover:bg-green-600 transition-colors"
-                >
-                  <FiCopy />
-                  {copied ? 'Copiado!' : 'Copiar Email'}
-                </button>
-                <button
-                  onClick={() => setGeneratedEmail('')}
-                  className="flex items-center gap-2 bg-gray-200 text-gray-700 px-6 py-3 rounded-xl hover:bg-gray-300 transition-colors"
-                >
-                  <FiRefreshCw />
-                  Gerar Novo
-                </button>
-              </div>
-            </motion.div>
-          )}
+          {/* CTA Final */}
+          <div className="text-center">
+            <Link href="/contato">
+              <button className="inline-block bg-[#3AC97B] text-[#09231B] px-8 py-3 rounded-xl hover:bg-[#3AC97B]/90 transition-colors font-medium">
+                Quero ajuda para otimizar minhas campanhas
+              </button>
+            </Link>
+            <p className="mt-4 text-sm text-[#FFF4C7]/60">
+              Agende uma consultoria gratuita para descobrir como podemos potencializar seus resultados
+            </p>
+          </div>
         </motion.div>
       </div>
     </main>

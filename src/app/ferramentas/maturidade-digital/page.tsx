@@ -166,7 +166,7 @@ export default function MaturidadeDigitalPage() {
   }
 
   return (
-    <main className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 py-20">
+    <main className="min-h-screen bg-[#09231B] py-20">
       <div className="container mx-auto px-4">
         <motion.div
           variants={staggerContainer}
@@ -176,29 +176,29 @@ export default function MaturidadeDigitalPage() {
         >
           <motion.div variants={fadeInUp} className="text-center mb-16">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              Teste de <span className="text-gradient">Maturidade Digital</span>
+              Teste de <span className="text-[#3AC97B]">Maturidade Digital</span>
             </h1>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-[#FFF4C7]/80 max-w-3xl mx-auto">
               Descubra o nível de maturidade digital da sua empresa e receba recomendações personalizadas
             </p>
           </motion.div>
 
-          <motion.div variants={fadeInUp} className="glass-card p-8">
+          <motion.div variants={fadeInUp} className="bg-[#09231B] border border-[#3AC97B]/20 rounded-xl p-8">
             {!showResults ? (
               <div className="space-y-8">
-                <div className="flex justify-between text-sm text-gray-600">
+                <div className="flex justify-between text-sm text-[#FFF4C7]/60">
                   <span>Questão {currentQuestion + 1} de {questions.length}</span>
                   <span>{((currentQuestion + 1) / questions.length * 100).toFixed(0)}% completo</span>
                 </div>
 
-                <div className="h-2 bg-gray-200 rounded-full">
+                <div className="h-2 bg-[#3AC97B]/10 rounded-full">
                   <div
-                    className="h-full bg-eg-green rounded-full transition-all duration-300"
+                    className="h-full bg-[#3AC97B] rounded-full transition-all duration-300"
                     style={{ width: `${((currentQuestion + 1) / questions.length * 100)}%` }}
                   />
                 </div>
 
-                <h2 className="text-2xl font-bold mb-8">
+                <h2 className="text-2xl font-bold mb-8 text-[#FFF4C7]">
                   {questions[currentQuestion].text}
                 </h2>
 
@@ -207,7 +207,7 @@ export default function MaturidadeDigitalPage() {
                     <button
                       key={index}
                       onClick={() => handleAnswer(option.value)}
-                      className="w-full text-left p-4 rounded-lg border border-gray-200 hover:border-eg-green hover:bg-eg-green/5 transition-colors duration-200"
+                      className="w-full text-left p-4 rounded-lg border border-[#3AC97B]/20 text-[#FFF4C7]/80 hover:border-[#3AC97B] hover:bg-[#3AC97B]/5 transition-colors duration-200"
                     >
                       {option.label}
                     </button>
@@ -217,10 +217,10 @@ export default function MaturidadeDigitalPage() {
             ) : (
               <div className="space-y-12">
                 <div className="text-center">
-                  <h2 className="text-3xl font-bold mb-4">
+                  <h2 className="text-3xl font-bold mb-4 text-[#FFF4C7]">
                     Seu Nível de Maturidade Digital
                   </h2>
-                  <div className="inline-block bg-gradient-to-r from-eg-green to-blue-500 text-white px-6 py-3 rounded-full text-xl font-bold">
+                  <div className="inline-block bg-[#3AC97B] text-[#09231B] px-6 py-3 rounded-xl text-xl font-bold">
                     {getMaturityLevel(75)}
                   </div>
                 </div>
@@ -229,17 +229,17 @@ export default function MaturidadeDigitalPage() {
                   {Object.entries(results).map(([category, score]) => {
                     if (category === 'total') return null
                     return (
-                      <div key={category} className="bg-white rounded-xl p-6 shadow-sm">
-                        <h3 className="text-lg font-semibold capitalize mb-2">
+                      <div key={category} className="bg-[#09231B] border border-[#3AC97B]/20 rounded-xl p-6">
+                        <h3 className="text-lg font-semibold capitalize mb-2 text-[#FFF4C7]">
                           {category}
                         </h3>
-                        <div className="h-2 bg-gray-200 rounded-full mb-4">
+                        <div className="h-2 bg-[#3AC97B]/10 rounded-full mb-4">
                           <div
-                            className="h-full bg-eg-green rounded-full"
+                            className="h-full bg-[#3AC97B] rounded-full"
                             style={{ width: `${score}%` }}
                           />
                         </div>
-                        <p className="text-sm text-gray-600">
+                        <p className="text-sm text-[#FFF4C7]/60">
                           {getRecommendation(category as keyof Results, score)}
                         </p>
                       </div>
@@ -249,12 +249,12 @@ export default function MaturidadeDigitalPage() {
 
                 <div className="text-center">
                   <Link href="/contato">
-                    <button className="btn-primary">
-                      Quero adubar minha empresa
+                    <button className="inline-block bg-[#3AC97B] text-[#09231B] px-8 py-3 rounded-xl hover:bg-[#3AC97B]/90 transition-colors font-medium">
+                      Receber Plano de Evolução Digital
                     </button>
                   </Link>
-                  <p className="mt-4 text-sm text-gray-600">
-                    Agende uma consultoria gratuita para discutir seu resultado em detalhes
+                  <p className="mt-4 text-sm text-[#FFF4C7]/60">
+                    Agende uma consultoria gratuita para descobrir como acelerar sua transformação digital
                   </p>
                 </div>
               </div>

@@ -72,39 +72,39 @@ export default function ContactForm() {
   return (
     <form onSubmit={handleSubmit} className="space-y-6">
       <div>
-        <label className="block text-sm font-medium text-gray-700 mb-2">
+        <label className="block text-sm font-medium text-[#FFF4C7] mb-2">
           Nome completo
         </label>
         <input
           type="text"
           value={formData.nome}
           onChange={(e) => setFormData({...formData, nome: e.target.value})}
-          className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-eg-green focus:border-transparent"
+          className="w-full px-4 py-3 rounded-xl bg-[#09231B] border border-[#3AC97B]/20 text-[#FFF4C7] placeholder-[#FFF4C7]/50 focus:outline-none focus:ring-2 focus:ring-[#3AC97B] focus:border-transparent"
           placeholder="Seu nome"
           required
         />
       </div>
       <div>
-        <label className="block text-sm font-medium text-gray-700 mb-2">
+        <label className="block text-sm font-medium text-[#FFF4C7] mb-2">
           Email corporativo
         </label>
         <input
           type="email"
           value={formData.email}
           onChange={(e) => setFormData({...formData, email: e.target.value})}
-          className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-eg-green focus:border-transparent"
+          className="w-full px-4 py-3 rounded-xl bg-[#09231B] border border-[#3AC97B]/20 text-[#FFF4C7] placeholder-[#FFF4C7]/50 focus:outline-none focus:ring-2 focus:ring-[#3AC97B] focus:border-transparent"
           placeholder="seu@empresa.com"
           required
         />
       </div>
       <div>
-        <label className="block text-sm font-medium text-gray-700 mb-2">
+        <label className="block text-sm font-medium text-[#FFF4C7] mb-2">
           Qual seu maior desafio hoje?
         </label>
         <textarea
           value={formData.mensagem}
           onChange={(e) => setFormData({...formData, mensagem: e.target.value})}
-          className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-eg-green focus:border-transparent"
+          className="w-full px-4 py-3 rounded-xl bg-[#09231B] border border-[#3AC97B]/20 text-[#FFF4C7] placeholder-[#FFF4C7]/50 focus:outline-none focus:ring-2 focus:ring-[#3AC97B] focus:border-transparent"
           rows={4}
           placeholder="Conte um pouco sobre o que você quer resolver/escalar"
           required
@@ -113,8 +113,8 @@ export default function ContactForm() {
 
       {status.message && (
         <div className={`p-4 rounded-xl ${
-          status.success ? 'bg-emerald-50 text-emerald-700' : 
-          status.error ? 'bg-red-50 text-red-700' : ''
+          status.success ? 'bg-[#3AC97B]/10 text-[#FFF4C7] border border-[#3AC97B]/20' : 
+          status.error ? 'bg-red-900/10 text-[#FFF4C7] border border-red-500/20' : ''
         }`}>
           {status.message}
         </div>
@@ -123,7 +123,7 @@ export default function ContactForm() {
       <button 
         type="submit" 
         disabled={status.loading}
-        className="w-full px-8 py-4 text-lg font-medium rounded-xl text-white bg-emerald-500 hover:bg-emerald-600 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 disabled:opacity-50 disabled:cursor-not-allowed"
+        className="w-full px-8 py-4 text-lg font-medium rounded-xl text-[#09231B] bg-[#3AC97B] hover:bg-[#3AC97B]/90 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 disabled:opacity-50 disabled:cursor-not-allowed"
       >
         {status.loading ? 'Enviando...' : 'Bora escalar isso juntos 🚀'}
       </button>

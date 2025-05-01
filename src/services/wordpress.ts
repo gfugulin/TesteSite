@@ -76,6 +76,7 @@ export interface Post {
     rendered: string;
   };
   date: string;
+  slug: string;
   featured_media: number;
   _embedded?: {
     'wp:featuredmedia'?: Array<{

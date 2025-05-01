@@ -1,9 +1,9 @@
 {
   "pages": {
-    "/page": [
+    "/equipe/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/page.js"
+      "static/chunks/app/equipe/page.js"
     ],
     "/layout": [
       "static/chunks/webpack.js",
@@ -11,95 +11,35 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/autoridade/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/autoridade/page.js"
-    ],
-    "/servicos/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/servicos/page.js"
-    ],
-    "/newsletter/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/newsletter/page.js"
-    ],
-    "/cases/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/cases/page.js"
-    ],
-    "/ferramentas/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/ferramentas/page.js"
-    ],
-    "/ferramentas/calculadora-roi/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/ferramentas/calculadora-roi/page.js"
-    ],
-    "/ferramentas/maturidade-digital/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/ferramentas/maturidade-digital/page.js"
-    ],
-    "/ferramentas/cold-email-builder/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/ferramentas/cold-email-builder/page.js"
-    ],
-    "/ferramentas/scanner-funil/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/ferramentas/scanner-funil/page.js"
-    ],
-    "/sobre/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/sobre/page.js"
-    ],
-    "/equipe/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/equipe/page.js"
-    ],
     "/eg-tech/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/eg-tech/page.js"
     ],
-    "/eg-lab/page": [
+    "/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/eg-lab/page.js"
-    ],
-    "/holding/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/holding/page.js"
-    ],
-    "/investidores/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/investidores/page.js"
+      "static/chunks/app/page.js"
     ],
     "/niveis-de-cliente/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/niveis-de-cliente/page.js"
     ],
-    "/contato/page": [
+    "/benchmark/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/contato/page.js"
+      "static/chunks/app/benchmark/page.js"
     ],
-    "/_not-found/page": [
+    "/autoridade/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/_not-found/page.js"
+      "static/chunks/app/autoridade/page.js"
+    ],
+    "/blog/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/blog/page.js"
     ]
   }
 }

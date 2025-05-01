@@ -143,7 +143,7 @@ export default function ScannerFunilPage() {
   }
 
   return (
-    <main className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 py-20">
+    <main className="min-h-screen bg-[#09231B] py-20">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -152,10 +152,10 @@ export default function ScannerFunilPage() {
         >
           {/* Hero Section */}
           <div className="text-center mb-16">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-[#3AC97B]">
               Scanner de Funil EG
             </h1>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-[#FFF4C7]/80 max-w-3xl mx-auto">
               Quer descobrir onde seu funil de vendas está vazando leads e dinheiro?<br />
               Responda 6 perguntas rápidas — e receba um diagnóstico imediato.
             </p>
@@ -163,25 +163,25 @@ export default function ScannerFunilPage() {
 
           {/* Quiz Section */}
           {!showResults ? (
-            <div className="bg-white rounded-2xl shadow-xl p-8">
+            <div className="bg-[#09231B] border border-[#3AC97B]/20 rounded-xl p-8">
               <div className="mb-8">
                 <div className="flex justify-between items-center mb-4">
-                  <span className="text-sm font-medium text-gray-500">
+                  <span className="text-sm font-medium text-[#FFF4C7]/60">
                     Pergunta {currentQuestion + 1} de {questions.length}
                   </span>
-                  <span className="text-sm font-medium text-gray-500">
+                  <span className="text-sm font-medium text-[#FFF4C7]/60">
                     {Math.round((currentQuestion / questions.length) * 100)}%
                   </span>
                 </div>
-                <div className="w-full bg-gray-200 rounded-full h-2">
+                <div className="w-full bg-[#3AC97B]/10 rounded-full h-2">
                   <div
-                    className="bg-green-500 h-2 rounded-full transition-all"
+                    className="bg-[#3AC97B] h-2 rounded-full transition-all"
                     style={{ width: `${(currentQuestion / questions.length) * 100}%` }}
                   />
                 </div>
               </div>
 
-              <h2 className="text-2xl font-bold mb-8">
+              <h2 className="text-2xl font-bold mb-8 text-[#FFF4C7]">
                 {questions[currentQuestion].text}
               </h2>
 
@@ -190,7 +190,7 @@ export default function ScannerFunilPage() {
                   <button
                     key={index}
                     onClick={() => handleAnswer(option.points)}
-                    className="w-full text-left p-4 rounded-xl border-2 border-gray-200 hover:border-green-500 hover:bg-green-50 transition-all"
+                    className="w-full text-left p-4 rounded-xl border border-[#3AC97B]/20 text-[#FFF4C7]/80 hover:border-[#3AC97B] hover:bg-[#3AC97B]/5 transition-all"
                   >
                     {option.text}
                   </button>
@@ -201,29 +201,29 @@ export default function ScannerFunilPage() {
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              className="bg-white rounded-2xl shadow-xl p-8"
+              className="bg-[#09231B] border border-[#3AC97B]/20 rounded-xl p-8"
             >
               {(() => {
                 const result = calculateResult()
                 return (
                   <div className="text-center">
                     <div className="text-6xl mb-6">{result.icon}</div>
-                    <h2 className={`text-3xl font-bold mb-4 text-${result.color}-600`}>
+                    <h2 className="text-3xl font-bold mb-4 text-[#3AC97B]">
                       {result.title}
                     </h2>
-                    <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
+                    <p className="text-lg text-[#FFF4C7]/80 mb-8 max-w-2xl mx-auto">
                       {result.message}
                     </p>
                     <div className="flex flex-col sm:flex-row justify-center gap-4">
                       <Link
                         href="/contato"
-                        className={`bg-${result.color}-500 text-white px-8 py-3 rounded-xl hover:bg-${result.color}-600 transition-colors`}
+                        className="inline-block bg-[#3AC97B] text-[#09231B] px-8 py-3 rounded-xl hover:bg-[#3AC97B]/90 transition-colors font-medium"
                       >
                         {result.cta}
                       </Link>
                       <button
                         onClick={resetQuiz}
-                        className="bg-gray-200 text-gray-700 px-8 py-3 rounded-xl hover:bg-gray-300 transition-colors"
+                        className="bg-[#09231B] border border-[#3AC97B]/20 text-[#FFF4C7] px-8 py-3 rounded-xl hover:bg-[#3AC97B]/5 hover:border-[#3AC97B]/40 transition-colors"
                       >
                         Refazer Diagnóstico
                       </button>

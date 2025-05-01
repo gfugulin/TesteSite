@@ -10,10 +10,13 @@ const nextConfig = {
         pathname: '/wp-content/uploads/**',
       },
     ],
-    unoptimized: false,
+    unoptimized: true,
     domains: ['evergreenmkt.com.br'],
   },
-  output: 'standalone',
+  output: 'export',
+  trailingSlash: true,
+  basePath: '',
+  assetPrefix: '',
 }
 
 module.exports = nextConfig 

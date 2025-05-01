@@ -93,26 +93,26 @@ const cases = [
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-gradient-to-b from-[#0D221B] via-[#0D221B] to-emerald-50">
+    <main className="min-h-screen bg-gradient-to-b from-[#09231B] via-[#09231B] to-[#3AC97B]/10">
       {/* HERO */}
-      <section className="relative py-32 bg-gradient-to-br from-blue-900 via-blue-800 to-emerald-900 text-center">
+      <section className="relative py-32 bg-gradient-to-br from-[#09231B] via-[#09231B] to-[#3AC97B]/20 text-center">
         <div className="container mx-auto px-4 max-w-4xl">
           <motion.div variants={staggerContainer} initial="hidden" animate="visible">
-            <motion.h1 variants={fadeInUp} className="text-4xl md:text-6xl font-bold mb-6 text-[#E6E3B1]">
+            <motion.h1 variants={fadeInUp} className="text-4xl md:text-6xl font-bold mb-6 text-[#FFF4C7]">
               Cresça de Forma Inteligente. Venda com Tecnologia. Escale com IA.
             </motion.h1>
-            <motion.p variants={fadeInUp} className="text-xl md:text-2xl mb-8 text-emerald-200">
+            <motion.p variants={fadeInUp} className="text-xl md:text-2xl mb-8 text-[#FFF4C7]/80">
               Somos a força por trás do crescimento previsível de negócios B2B.<br />
               Implementamos sistemas de marketing, vendas e tecnologia que geram receita real — com inteligência artificial e automação.
             </motion.p>
-            <motion.blockquote variants={fadeInUp} className="text-2xl italic text-emerald-400 bg-emerald-950/30 p-6 rounded-2xl max-w-3xl mx-auto mb-8">
+            <motion.blockquote variants={fadeInUp} className="text-2xl italic text-[#3AC97B] bg-[#09231B]/80 p-6 rounded-2xl max-w-3xl mx-auto mb-8">
               Tecnologia que conecta. Growth que escala. IA que executa.
             </motion.blockquote>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/contato" className="inline-flex items-center px-8 py-4 text-lg font-medium rounded-xl bg-emerald-500 text-white hover:bg-emerald-600 transition-colors duration-300 shadow-lg">
+              <Link href="/contato" className="inline-flex items-center px-8 py-4 text-lg font-medium rounded-xl bg-[#3AC97B] text-[#09231B] hover:bg-[#3AC97B]/90 transition-colors duration-300 shadow-lg">
                 Agendar Diagnóstico de Receita
               </Link>
-              <Link href="/cases" className="inline-flex items-center px-8 py-4 text-lg font-medium rounded-xl bg-white text-emerald-700 border-2 border-emerald-100 hover:bg-emerald-100 transition-colors duration-300">
+              <Link href="/cases" className="inline-flex items-center px-8 py-4 text-lg font-medium rounded-xl bg-[#09231B] text-[#FFF4C7] border border-[#3AC97B] hover:bg-[#09231B]/80 transition-colors duration-300">
                 Ver Casos Reais
               </Link>
             </div>
@@ -143,41 +143,41 @@ export default function Home() {
       </section>
         */}
       {/* SISTEMA EVERGREEN */}
-      <section className="py-24 bg-gradient-to-br from-emerald-950 via-[#0D221B] to-blue-900">
+      <section className="py-24 bg-gradient-to-br from-[#09231B] via-[#09231B] to-[#3AC97B]/20">
         <div className="container mx-auto px-4 max-w-5xl">
-          <motion.h2 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} viewport={{ once: true }} className="text-3xl font-bold mb-12 text-[#E6E3B1] text-center">
+          <motion.h2 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} viewport={{ once: true }} className="text-3xl font-bold mb-12 text-[#FFF4C7] text-center">
             Nossa Metodologia:<br />Da Aquisição ao Crescimento com Inteligência.
           </motion.h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {systemBlocks.map((block) => (
-              <div key={block.title} className="glass-card p-8 bg-emerald-900/30 text-center flex flex-col items-center">
+              <div key={block.title} className="glass-card p-8 bg-[#09231B]/80 border border-[#3AC97B]/20 text-center flex flex-col items-center">
                 <div>{block.icon}</div>
-                <h3 className="text-xl font-bold mb-2 text-emerald-400">{block.title}</h3>
-                <p className="text-[#E6E3B1] text-sm">{block.desc}</p>
+                <h3 className="text-xl font-bold mb-2 text-[#3AC97B]">{block.title}</h3>
+                <p className="text-[#FFF4C7]/80 text-sm">{block.desc}</p>
               </div>
             ))}
           </div>
-          <p className="text-emerald-200 text-lg text-center mt-8">Tudo integrado. Tudo focado em gerar receita real.</p>
+          <p className="text-[#FFF4C7]/80 text-lg text-center mt-8">Tudo integrado. Tudo focado em gerar receita real.</p>
         </div>
       </section>
 
       {/* SERVIÇOS EM CARDS */}
-      <section className="py-24 bg-[#0D221B]">
+      <section className="py-24 bg-[#09231B]">
         <div className="container mx-auto px-4 max-w-6xl">
-          <motion.h2 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} viewport={{ once: true }} className="text-3xl font-bold mb-12 text-[#E6E3B1] text-center">
+          <motion.h2 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} viewport={{ once: true }} className="text-3xl font-bold mb-12 text-[#FFF4C7] text-center">
             Nossos Serviços
           </motion.h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service) => (
-              <div key={service.title} className="glass-card p-8 bg-emerald-900/30 text-center flex flex-col items-center">
-                <div className="text-4xl mb-4 text-emerald-400">{service.icon}</div>
-                <h3 className="text-xl font-bold mb-2 text-emerald-400">{service.title}</h3>
-                <p className="text-[#E6E3B1] text-sm">{service.desc}</p>
+              <div key={service.title} className="glass-card p-8 bg-[#09231B]/80 border border-[#3AC97B]/20 text-center flex flex-col items-center">
+                <div className="text-4xl mb-4 text-[#3AC97B]">{service.icon}</div>
+                <h3 className="text-xl font-bold mb-2 text-[#3AC97B]">{service.title}</h3>
+                <p className="text-[#FFF4C7]/80 text-sm">{service.desc}</p>
               </div>
             ))}
           </div>
           <div className="text-center mt-10">
-            <Link href="/servicos" className="inline-flex items-center px-8 py-4 text-lg font-medium rounded-xl bg-emerald-500 text-white hover:bg-emerald-600 transition-colors duration-300 shadow-lg">
+            <Link href="/servicos" className="inline-flex items-center px-8 py-4 text-lg font-medium rounded-xl bg-[#3AC97B] text-[#09231B] hover:bg-[#3AC97B]/90 transition-colors duration-300 shadow-lg">
               Ver Todos os Serviços
             </Link>
           </div>
@@ -210,19 +210,19 @@ export default function Home() {
       </section>
         */}
       {/* CTA FINAL */}
-      <section className="py-24 bg-gradient-to-br from-emerald-900 via-emerald-800 to-blue-900 text-center">
+      <section className="py-24 bg-gradient-to-br from-[#09231B] via-[#09231B] to-[#3AC97B]/20 text-center">
         <div className="container mx-auto px-4 max-w-2xl">
-          <motion.h2 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} viewport={{ once: true }} className="text-4xl font-bold mb-6 text-[#E6E3B1]">
+          <motion.h2 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} viewport={{ once: true }} className="text-4xl font-bold mb-6 text-[#FFF4C7]">
             Pronto para Escalar sua Receita de Forma Inteligente?
           </motion.h2>
-          <p className="text-emerald-200 text-lg mb-8">
+          <p className="text-[#FFF4C7]/80 text-lg mb-8">
             Vamos desenhar o sistema que vai destravar seu crescimento.<br />Agende agora um Diagnóstico Estratégico gratuito.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
-            <Link href="/contato" className="inline-flex items-center px-8 py-4 text-lg font-medium rounded-xl bg-emerald-500 text-white hover:bg-emerald-600 transition-colors duration-300 shadow-lg">
+            <Link href="/contato" className="inline-flex items-center px-8 py-4 text-lg font-medium rounded-xl bg-[#3AC97B] text-[#09231B] hover:bg-[#3AC97B]/90 transition-colors duration-300 shadow-lg">
               Agendar Diagnóstico de Receita
             </Link>
-            <Link href="/contato" className="inline-flex items-center px-8 py-4 text-lg font-medium rounded-xl bg-white text-emerald-700 border-2 border-emerald-100 hover:bg-emerald-100 transition-colors duration-300">
+            <Link href="/contato" className="inline-flex items-center px-8 py-4 text-lg font-medium rounded-xl bg-[#09231B] text-[#FFF4C7] border border-[#3AC97B] hover:bg-[#09231B]/80 transition-colors duration-300">
               Falar com um Especialista
             </Link>
           </div>

@@ -1,9 +1,9 @@
 'use client'
 
-import { useCallback } from 'react'
-import { Particles } from '@tsparticles/react'
+import { useEffect, useState } from 'react'
+import Particles, { initParticlesEngine } from '@tsparticles/react'
 import { loadSlim } from '@tsparticles/slim'
-import type { Engine } from '@tsparticles/engine'
+import type { Container, Engine } from '@tsparticles/engine'
 
 interface ParticlesBackgroundProps {
   children: React.ReactNode
@@ -16,9 +16,19 @@ export default function ParticlesBackground({
   className = '',
   variant = 'light'
 }: ParticlesBackgroundProps) {
-  const particlesInit = useCallback(async (engine: Engine) => {
+  const [init, setInit] = useState(false)
+
+  useEffect(() => {
+    initParticlesEngine(async (engine) => {
     await loadSlim(engine)
+    }).then(() => {
+      setInit(true)
+    })
   }, [])
+
+  const particlesLoaded = async (container?: Container): Promise<void> => {
+    console.log('Particles container loaded', container)
+  }
 
   const getParticlesConfig = (variant: string) => {
     const baseConfig = {
@@ -136,12 +146,20 @@ export default function ParticlesBackground({
     }
   }
 
+  if (!init) {
+    return (
+      <div className={`relative ${className}`}>
+        <div className="relative z-10">{children}</div>
+      </div>
+    )
+  }
+
   return (
     <div className={`relative ${className}`}>
       <Particles
         className="absolute inset-0"
         options={getParticlesConfig(variant)}
-        particlesInit={particlesInit}
+        particlesLoaded={particlesLoaded}
       />
       <div className="relative z-10">{children}</div>
     </div>
