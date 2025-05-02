@@ -173,7 +173,7 @@ export default function SobrePage() {
                   Quero ser parte da floresta
                 </Link>
                 <Link 
-                  href="/cases"
+                  href="/autoridade"
                   className="inline-flex items-center px-8 py-4 text-lg font-medium rounded-xl text-[#FFF4C7] bg-[#09231B] hover:bg-[#09231B]/80 border border-[#3AC97B]/20 transition-colors shadow-lg hover:shadow-xl"
                 >
                   Ver Casos

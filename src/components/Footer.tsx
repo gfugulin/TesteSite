@@ -48,7 +48,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/cases" className="text-[#E6E3B1] hover:text-emerald-500">
+                <Link href="/autoridade" className="text-[#E6E3B1] hover:text-emerald-500">
                   Cases
                 </Link>
               </li>

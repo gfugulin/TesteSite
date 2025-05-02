@@ -112,7 +112,7 @@ export default function Home() {
               <Link href="/contato" className="inline-flex items-center px-8 py-4 text-lg font-medium rounded-xl bg-[#3AC97B] text-[#09231B] hover:bg-[#3AC97B]/90 transition-colors duration-300 shadow-lg">
                 Agendar Diagnóstico de Receita
               </Link>
-              <Link href="/cases" className="inline-flex items-center px-8 py-4 text-lg font-medium rounded-xl bg-[#09231B] text-[#FFF4C7] border border-[#3AC97B] hover:bg-[#09231B]/80 transition-colors duration-300">
+              <Link href="/autoridade" className="inline-flex items-center px-8 py-4 text-lg font-medium rounded-xl bg-[#09231B] text-[#FFF4C7] border border-[#3AC97B] hover:bg-[#09231B]/80 transition-colors duration-300">
                 Ver Casos Reais
               </Link>
             </div>

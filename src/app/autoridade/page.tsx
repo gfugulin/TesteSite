@@ -399,7 +399,7 @@ export default function AutoridadePage() {
             Por isso, cada aprendizado nosso vira um framework, uma automação, um sistema — e vai direto pro campo.
           </p>
           <Link 
-            href="/cases"
+            href="/autoridade"
             className="inline-block bg-[#3AC97B] text-[#09231B] px-8 py-3 rounded-full hover:bg-[#3AC97B]/90 transition-colors font-medium"
           >
             Veja como aplicamos isso na prática

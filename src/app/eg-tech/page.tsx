@@ -316,7 +316,7 @@ export default function EGTechPage() {
                   Quero Diagnóstico Tech
                 </Link>
                 <Link
-                  href="/cases"
+                  href="/autoridade"
                   className="inline-flex items-center px-8 py-4 text-lg font-medium rounded-xl border-2 border-blue-100 text-blue-100 hover:bg-blue-800 transition-colors duration-300"
                 >
                   Ver Soluções Aplicadas

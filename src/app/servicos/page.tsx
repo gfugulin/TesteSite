@@ -76,7 +76,7 @@ export default function ServicosPage() {
                 <a href="/contato" className="inline-flex items-center px-6 py-3 text-[#09231B] bg-[#3AC97B] rounded-xl hover:bg-[#3AC97B]/90 transition-colors">
                   Agendar Diagnóstico
                 </a>
-                <a href="/cases" className="inline-flex items-center px-6 py-3 text-[#3AC97B] bg-[#09231B] border border-[#3AC97B]/20 rounded-xl hover:bg-[#09231B]/80 hover:border-[#3AC97B]/40 transition-all">
+                <a href="/autoridade" className="inline-flex items-center px-6 py-3 text-[#3AC97B] bg-[#09231B] border border-[#3AC97B]/20 rounded-xl hover:bg-[#09231B]/80 hover:border-[#3AC97B]/40 transition-all">
                   Ver Casos Aplicados
                 </a>
               </div>

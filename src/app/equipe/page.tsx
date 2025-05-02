@@ -261,7 +261,7 @@ export default function EquipePage() {
                   Quero ser parte da floresta
                 </Link>
                 <Link
-                  href="/cases"
+                  href="/autoridade"
                   className="inline-flex items-center px-8 py-4 text-lg font-medium rounded-xl text-[#FFF4C7] bg-[#09231B] hover:bg-[#09231B]/80 border border-[#3AC97B] transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
                 >
                   Ver Casos

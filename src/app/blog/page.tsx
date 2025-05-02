@@ -317,7 +317,7 @@ export default function BlogPage() {
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link 
-              href="/cases"
+              href="/autoridade"
               className="bg-[#09231B] text-[#3AC97B] px-8 py-3 rounded-full border border-[#3AC97B]/20 hover:bg-[#09231B]/80 transition-colors"
             >
               Ver Casos de Sucesso
