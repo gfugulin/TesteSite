@@ -91,6 +91,18 @@ const allServices = [
   ...biServices,
 ]
 
+// Mapear o título para o slug da rota
+const serviceSlug = {
+  'Evergreen DRE': 'dre',
+  'Evergreen Flow': 'flow',
+  'Evergreen CobrAI': 'cobrai',
+  'Evergreen LegalBot': 'legalbot',
+  'Evergreen DocFast': 'docfast',
+  'Evergreen WhatsBot': 'whatsbot',
+  'Evergreen PitchBuilder': 'pitchbuilder',
+  'Evergreen BI Starter': 'bi-starter',
+};
+
 const starterPack = [
   'DRE Automática',
   'Cobrança Automatizada',
@@ -281,6 +293,9 @@ export default function EGOSPage() {
                       <div className="text-3xl mb-4">{s.icon}</div>
                       <h3 className="text-xl font-bold text-emerald-400 mb-2">{s.title}</h3>
                       <p className="text-[#E6E3B1] text-sm mb-4">{s.desc}</p>
+                      <Link href={`/eg-os/${serviceSlug[s.title as keyof typeof serviceSlug] || ''}`} className="text-emerald-300 font-semibold text-base mt-2 hover:underline focus:underline transition-colors">
+                        Ver mais
+                      </Link>
                     </div>
                   </div>
                 ))}

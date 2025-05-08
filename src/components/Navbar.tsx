@@ -185,38 +185,34 @@ export default function Navbar() {
       </div>
 
       {/* Menu Mobile Expandido */}
-      <div className={`${isOpen ? 'block' : 'hidden'} lg:hidden bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-800`}>
+      <div className={`${isOpen ? 'block' : 'hidden'} lg:hidden bg-[#0D221B] border-t border-gray-200/10`}>
         <div className="px-2 pt-2 pb-3 space-y-1">
-          <Link
-            href="/blog"
-            className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-200 hover:text-emerald-500 hover:bg-gray-50 dark:hover:bg-gray-800"
-          >
-            Blog
-          </Link>
-          <Link
-            href="/autoridade"
-            className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-200 hover:text-emerald-500 hover:bg-gray-50 dark:hover:bg-gray-800"
-          >
-            Autoridade
-          </Link>
-          <Link
-            href="/servicos"
-            className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-200 hover:text-emerald-500 hover:bg-gray-50 dark:hover:bg-gray-800"
-          >
-            Soluções
-          </Link>
-          <Link
-            href="/newsletter"
-            className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-200 hover:text-emerald-500 hover:bg-gray-50 dark:hover:bg-gray-800"
-          >
-            Newsletter
-          </Link>
-          <Link
-            href="/contato"
-            className="block px-3 py-2 rounded-md text-base font-medium text-emerald-500 hover:text-emerald-600"
-          >
-            Agendar Diagnóstico
-          </Link>
+          {/* Links principais */}
+          <Link href="/blog" onClick={() => setIsOpen(false)} className="block px-3 py-2 rounded-md text-base font-medium text-[#E6E3B1] hover:text-emerald-500">Blog</Link>
+          <Link href="/autoridade" onClick={() => setIsOpen(false)} className="block px-3 py-2 rounded-md text-base font-medium text-[#E6E3B1] hover:text-emerald-500">Autoridade</Link>
+          <Link href="/servicos" onClick={() => setIsOpen(false)} className="block px-3 py-2 rounded-md text-base font-medium text-[#E6E3B1] hover:text-emerald-500">Soluções</Link>
+          <Link href="/benchmark" onClick={() => setIsOpen(false)} className="block px-3 py-2 rounded-md text-base font-medium text-[#E6E3B1] hover:text-emerald-500">Benchmark</Link>
+          {/* Recursos */}
+          <div>
+            <span className="block px-3 py-2 text-base font-semibold text-emerald-500">Recursos</span>
+            <Link href="/newsletter" onClick={() => setIsOpen(false)} className="block px-6 py-2 rounded-md text-base font-medium text-[#E6E3B1] hover:text-emerald-500">Newsletter</Link>
+            <Link href="/ferramentas" onClick={() => setIsOpen(false)} className="block px-6 py-2 rounded-md text-base font-medium text-[#E6E3B1] hover:text-emerald-500">Recursos Gratuitos</Link>
+          </div>
+          {/* Empresa */}
+          <div>
+            <span className="block px-3 py-2 text-base font-semibold text-emerald-500">Empresa</span>
+            <Link href="/sobre" onClick={() => setIsOpen(false)} className="block px-6 py-2 rounded-md text-base font-medium text-[#E6E3B1] hover:text-emerald-500">Sobre Nós</Link>
+            <Link href="/equipe" onClick={() => setIsOpen(false)} className="block px-6 py-2 rounded-md text-base font-medium text-[#E6E3B1] hover:text-emerald-500">Nossa Equipe</Link>
+            <Link href="/eg-tech" onClick={() => setIsOpen(false)} className="block px-6 py-2 rounded-md text-base font-medium text-[#E6E3B1] hover:text-emerald-500">EG Tech</Link>
+            <Link href="/eg-lab" onClick={() => setIsOpen(false)} className="block px-6 py-2 rounded-md text-base font-medium text-[#E6E3B1] hover:text-emerald-500">EG Lab</Link>
+            <Link href="/eg-os" onClick={() => setIsOpen(false)} className="block px-6 py-2 rounded-md text-base font-medium text-[#E6E3B1] hover:text-emerald-500">EG Os</Link>
+            <Link href="/holding" onClick={() => setIsOpen(false)} className="block px-6 py-2 rounded-md text-base font-medium text-[#E6E3B1] hover:text-emerald-500">Holding</Link>
+            <Link href="/investidores" onClick={() => setIsOpen(false)} className="block px-6 py-2 rounded-md text-base font-medium text-[#E6E3B1] hover:text-emerald-500">Investidores</Link>
+            <Link href="/niveis-de-cliente" onClick={() => setIsOpen(false)} className="block px-6 py-2 rounded-md text-base font-medium text-[#E6E3B1] hover:text-emerald-500">Níveis de Clientes</Link>
+            <Link href="/contato" onClick={() => setIsOpen(false)} className="block px-6 py-2 rounded-md text-base font-medium text-[#E6E3B1] hover:text-emerald-500">Contato</Link>
+          </div>
+          {/* Botão de ação */}
+          <Link href="/contato" className="block px-3 py-2 mt-2 rounded-xl text-base font-medium text-white bg-emerald-500 hover:bg-emerald-600 text-center">Agendar Diagnóstico</Link>
         </div>
       </div>
     </nav>

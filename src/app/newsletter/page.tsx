@@ -57,7 +57,7 @@ export default function Newsletter() {
             </motion.div>
             <h1 className="text-4xl md:text-5xl font-bold text-[#3AC97B] mb-6">
               Não Deixe para Terça
-            </h1>
+          </h1>
             <p className="text-xl text-[#FFF4C7]/80 mb-8 max-w-2xl mx-auto">
               A newsletter da Evergreen MKT que entrega crescimento real — hoje, não na semana que vem.
             </p>
@@ -71,12 +71,12 @@ export default function Newsletter() {
           </div>
 
           {/* Formulário Principal */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
             className="max-w-md mx-auto bg-[#09231B] rounded-2xl shadow-xl p-8 mb-16 border border-[#3AC97B]/20"
-          >
+        >
             <h2 className="text-2xl font-bold text-[#3AC97B] mb-4">
               Receba insights toda semana
             </h2>
@@ -96,13 +96,13 @@ export default function Newsletter() {
                 Prometemos não mandar spam. Só coisa aplicável. Com sorte, até engraçada.
               </p>
             </form>
-          </motion.div>
+        </motion.div>
 
           {/* Grid de Benefícios */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.4 }}
             className="grid md:grid-cols-2 gap-6 mb-16"
           >
             {beneficios.map((beneficio, index) => (

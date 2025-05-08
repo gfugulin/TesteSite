@@ -145,7 +145,7 @@ export default function BlogPage() {
           >
             "Não escrevemos pra parecer inteligentes. Escrevemos pra fazer você crescer."
           </motion.blockquote>
-          <motion.div 
+        <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.8 }}
@@ -256,10 +256,10 @@ export default function BlogPage() {
                     <div className="flex justify-between items-center">
                       <span className="text-sm text-[#FFF4C7]/60">
                         {new Date(post.date).toLocaleDateString('pt-BR')}
-                      </span>
+                </span>
                       <span className="text-[#3AC97B] font-medium">Ler Agora →</span>
-                    </div>
-                  </div>
+                </div>
+              </div>
                 </Link>
               </motion.article>
             ))}
@@ -329,8 +329,8 @@ export default function BlogPage() {
               Agendar Diagnóstico
             </Link>
           </div>
-        </div>
-      </section>
+      </div>
+    </section>
     </div>
   )
 } 
