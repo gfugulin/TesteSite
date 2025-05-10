@@ -1,9 +1,9 @@
 {
   "pages": {
-    "/eg-os/page": [
+    "/eg-os/cobrai/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/eg-os/page.js"
+      "static/chunks/app/eg-os/cobrai/page.js"
     ],
     "/layout": [
       "static/chunks/webpack.js",
@@ -11,20 +11,35 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/eg-os/dre/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/eg-os/dre/page.js"
-    ],
     "/eg-os/flow/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/eg-os/flow/page.js"
     ],
-    "/eg-os/legalbot/page": [
+    "/eg-os/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/eg-os/legalbot/page.js"
+      "static/chunks/app/eg-os/page.js"
+    ],
+    "/eg-os/docfast/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/eg-os/docfast/page.js"
+    ],
+    "/eg-os/whatsbot/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/eg-os/whatsbot/page.js"
+    ],
+    "/eg-os/pitchbuilder/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/eg-os/pitchbuilder/page.js"
+    ],
+    "/eg-os/bi-starter/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/eg-os/bi-starter/page.js"
     ]
   }
 }

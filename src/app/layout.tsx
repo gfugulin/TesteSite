@@ -25,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR" className={inter.variable}>
       <Head>
-        <link rel="icon" href="/images/favicon.png" type="image/png" />
+        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
       </Head>
       <body className={`${inter.className} min-h-screen bg-gray-50 dark:bg-gray-900`}>
         <Navbar />

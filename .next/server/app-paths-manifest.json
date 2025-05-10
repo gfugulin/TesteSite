@@ -1,6 +1,8 @@
 {
+  "/eg-os/cobrai/page": "app/eg-os/cobrai/page.js",
   "/eg-os/page": "app/eg-os/page.js",
-  "/eg-os/flow/page": "app/eg-os/flow/page.js",
-  "/eg-os/dre/page": "app/eg-os/dre/page.js",
-  "/eg-os/legalbot/page": "app/eg-os/legalbot/page.js"
+  "/eg-os/docfast/page": "app/eg-os/docfast/page.js",
+  "/eg-os/whatsbot/page": "app/eg-os/whatsbot/page.js",
+  "/eg-os/pitchbuilder/page": "app/eg-os/pitchbuilder/page.js",
+  "/eg-os/bi-starter/page": "app/eg-os/bi-starter/page.js"
 }
